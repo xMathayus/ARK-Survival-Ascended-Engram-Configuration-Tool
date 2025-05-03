@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ARK: Survival Ascended Engram Configuration Tool</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: Tahoma, sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #e0f7ff;
+      margin: 0;
+      padding: 40px 0;
+      display: flex;
+      justify-content: center;
+    }
+    #main {
+      width: 95%;
+      max-width: 1300px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      color: #9cd5ff;
+      margin-bottom: 30px;
+      text-shadow: 0 0 5px #00bfff, 0 0 10px #0099cc, 1px 1px 2px #000;
+      border-bottom: 2px solid rgba(156, 213, 255, 0.4);
+      padding-bottom: 10px;
+    }
+    .top-buttons {
+      text-align: right;
+      margin-bottom: 10px;
+    }
+    .top-buttons button, button {
+      background-color: #00557f;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      margin: 10px 5px;
+    }
+    .top-buttons button:hover, button:hover {
+      background-color: #0077aa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: rgba(10, 20, 30, 0.9);
+      margin-bottom: 20px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    th, td {
+      border: 1px solid #2b6ca3;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #06314f;
+      color: #9cd5ff;
+    }
+    td input[type="number"] {
+      width: 100%;
+      padding: 4px;
+      background-color: #001d33;
+      color: #fff;
+      border: 1px solid #2b6ca3;
+    }
+    input[type="checkbox"] {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+    .section-row {
+      background-color: #092840;
+      font-weight: bold;
+      color: #72d0ff;
+      text-align: left;
+      padding-left: 10px;
+      cursor: pointer;
+      transition: background-color 0.2s, color 0.2s;
+    }
+    .section-row:hover {
+      background-color: #113952;
+      color: #b4e0ff;
+    }
+    .toggleable {
+      text-align: center;
+    }
+    tr:hover:not(.section-row) {
+      background-color: rgba(20, 40, 60, 0.6);
+    }
+    textarea {
+      width: 100%;
+      background-color: #001a2e;
+      color: #00ffff;
+      border: 1px solid #00ffff;
+      padding: 10px;
+      font-family: monospace;
+      font-size: 14px;
+      resize: vertical;
+      margin-top: 10px;
+    }
+    #importBox { height: 150px; }
+    #output { height: 200px; }
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #66ccee;
+      text-shadow: 0 0 2px #000;
+    }
+    .footer a {
+      color: #88ddff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <div class="top-buttons">
+      <button onclick="location.href='CraftingEditor.html'">Switch to Crafting Override Editor</button>
+    </div>
+    <h1>ARK: Survival Ascended Engram Configuration Tool</h1>
+    <form id="engramForm">
+      <table>
+        <thead>
+          <tr>
+            <th><input type="checkbox" id="selectAll" title="Select All Engrams"></th>
+            <th>Item ID</th>
+            <th>Level</th>
+            <th>Point Cost</th>
+            <th>Hide</th>
+            <th>Remove PreReq</th>
+          </tr>
+        </thead>
+        <tbody id="engramTable"></tbody>
+      </table>
+      <h2>Import Modded Engrams</h2>
+      <textarea id="importBox" placeholder="Paste full override lines or EngramEntry_Example_C"></textarea>
+      <button type="button" onclick="importEngrams()">+ Import All</button>
+      <h2>Generate Game.ini Overrides</h2>
+      <button type="button" onclick="generateOverride()">Generate</button>
+      <textarea id="output" readonly></textarea>
+    </form>
+    <div class="footer">
+      Created by <a href="https://github.com/xMathayus">xMathayus</a> — ARK Engram Configuration Tool © 2025<br>
+      ☕ Like the tool? <a href="https://ko-fi.com/mathayus" target="_blank">Buy me a coffee!</a>
+    </div>
+  </div>
+  <script src="EngramsList.js"></script>
+  <script>
+    const tableBody = document.getElementById('engramTable');
+    let modSectionHeaders = [];
+    let modRowsBySection = {};
+
+    const officialSections = [
+      'Base Game', "Bob's Tall Tales", 'Tekgrams', 'Scorched Earth', 'Aberration',
+      'Extinction', 'Genesis', 'Genesis Part 1', 'Genesis Part 2', 'Fjordur',
+      'The Center', 'Lost Island', 'Crystal Isles', 'Skins'
+    ];
+
+    function renderEngrams(engrams) {
+      tableBody.innerHTML = '';
+      modSectionHeaders = [];
+      modRowsBySection = {};
+      let currentSection = '';
+      let modsInitialized = false;
+
+      engrams.forEach(entry => {
+        const row = document.createElement('tr');
+        if (entry.section) {
+          currentSection = entry.section;
+          if (currentSection === 'Skins') {
+            row.className = 'section-row toggleable';
+            row.innerHTML = `<td colspan="6" onclick="toggleSection('skins')"><span id="toggleText-skins">+ Show Skins Engrams</span></td>`;
+            tableBody.appendChild(row);
+          } else if (!officialSections.includes(currentSection)) {
+            if (!modsInitialized) {
+              modsInitialized = true;
+              const toggle = document.createElement('tr');
+              toggle.className = 'section-row toggleable';
+              toggle.innerHTML = `<td colspan="6" onclick="toggleModHeaders()"><span id="toggleText-mods">+ Show Third-Party Mod Engrams</span></td>`;
+              tableBody.appendChild(toggle);
+            }
+            const modHeader = document.createElement('tr');
+            modHeader.className = 'section-row mods-header-row';
+            modHeader.innerHTML = `<td colspan="6" onclick="toggleModSection('${currentSection}')">${currentSection}</td>`;
+            modHeader.style.display = 'none';
+            tableBody.appendChild(modHeader);
+            modSectionHeaders.push(modHeader);
+            modRowsBySection[currentSection] = [];
+          } else {
+            row.className = 'section-row';
+            row.innerHTML = `<td colspan="6">${currentSection}</td>`;
+            tableBody.appendChild(row);
+          }
+        } else {
+          row.dataset.id = entry.id;
+          row.innerHTML = `
+            <td><input type="checkbox" class="engram-checkbox"></td>
+            <td>${entry.name}</td>
+            <td><input type="number" value="${entry.level}" class="engram-level"></td>
+            <td><input type="number" value="${entry.cost}" class="engram-cost"></td>
+            <td><input type="checkbox" class="engram-hide"></td>
+            <td><input type="checkbox" class="engram-prereq"></td>
+          `;
+          if (modRowsBySection[currentSection]) {
+            row.classList.add('mod-row');
+            row.dataset.mod = currentSection;
+            row.style.display = 'none';
+            modRowsBySection[currentSection].push(row);
+          } else if (currentSection === 'Skins') {
+            row.classList.add('skins-row');
+            row.style.display = 'none';
+          }
+          tableBody.appendChild(row);
+        }
+      });
+    }
+
+    function toggleModHeaders() {
+      const headers = document.querySelectorAll('.mods-header-row');
+      const toggle = document.getElementById('toggleText-mods');
+      const isHidden = headers[0]?.style.display === 'none';
+      headers.forEach(h => h.style.display = isHidden ? '' : 'none');
+      toggle.textContent = `${isHidden ? '− Hide' : '+ Show'} Third-Party Mod Engrams`;
+      if (!isHidden) {
+        document.querySelectorAll('.mod-row').forEach(r => r.style.display = 'none');
+      }
+    }
+
+    function toggleModSection(modName) {
+      const rows = modRowsBySection[modName] || [];
+      const showing = rows[0]?.style.display !== 'none';
+      document.querySelectorAll('.mod-row').forEach(r => r.style.display = 'none');
+      if (!showing) rows.forEach(r => r.style.display = '');
+    }
+
+    function toggleSection(section) {
+      const rows = document.querySelectorAll(`.${section}-row`);
+      const toggle = document.getElementById(`toggleText-${section}`);
+      const hidden = rows[0]?.style.display === 'none';
+      rows.forEach(r => r.style.display = hidden ? '' : 'none');
+      toggle.textContent = `${hidden ? '− Hide' : '+ Show'} ${section === 'skins' ? 'Skins' : 'Mods and More'} Engrams`;
+    }
+
+    function addEngramRow(id, level = 1, cost = 0, hide = false, prereq = false, checked = true) {
+      const row = document.createElement('tr');
+      row.dataset.id = id;
+      row.innerHTML = `
+        <td><input type="checkbox" class="engram-checkbox" ${checked ? 'checked' : ''}></td>
+        <td>${id}</td>
+        <td><input type="number" value="${level}" class="engram-level"></td>
+        <td><input type="number" value="${cost}" class="engram-cost"></td>
+        <td><input type="checkbox" class="engram-hide" ${hide ? 'checked' : ''}></td>
+        <td><input type="checkbox" class="engram-prereq" ${prereq ? 'checked' : ''}></td>
+      `;
+      tableBody.appendChild(row);
+    }
+
+    function importEngrams() {
+      const lines = document.getElementById('importBox').value.trim().split('\n').map(l => l.trim()).filter(Boolean);
+      lines.forEach(line => {
+        if (line.startsWith("OverrideNamedEngramEntries")) {
+          const id = line.match(/EngramClassName=\"([^\"]+)\"/)?.[1];
+          const level = parseInt(line.match(/EngramLevelRequirement=(\d+)/)?.[1]) || 1;
+          const cost = parseInt(line.match(/EngramPointsCost=(\d+)/)?.[1]) || 0;
+          const hide = /EngramHidden=(True)/i.test(line);
+          const prereq = /RemoveEngramPreReq=(True)/i.test(line);
+          if (id) addEngramRow(id, level, cost, hide, prereq);
+        } else if (line.endsWith('_C')) {
+          addEngramRow(line);
+        }
+      });
+      document.getElementById('importBox').value = '';
+    }
+
+    function generateOverride() {
+      const rows = document.querySelectorAll('#engramTable tr');
+      let output = '';
+      rows.forEach(row => {
+        const checkbox = row.querySelector('.engram-checkbox');
+        if (checkbox && checkbox.checked) {
+          const id = row.dataset.id;
+          const level = row.querySelector('.engram-level')?.value || 1;
+          const cost = row.querySelector('.engram-cost')?.value || 0;
+          const hidden = row.querySelector('.engram-hide')?.checked ? 'True' : 'False';
+          const prereq = row.querySelector('.engram-prereq')?.checked ? 'True' : 'False';
+          output += `OverrideNamedEngramEntries=(EngramClassName=\"${id}\",EngramLevelRequirement=${level},EngramPointsCost=${cost},EngramHidden=${hidden},RemoveEngramPreReq=${prereq})\n`;
+        }
+      });
+      document.getElementById('output').value = output;
+    }
+
+    document.getElementById('selectAll').addEventListener('change', function () {
+      document.querySelectorAll('.engram-checkbox').forEach(cb => {
+        const row = cb.closest('tr');
+        if (row && row.style.display !== 'none') cb.checked = this.checked;
+      });
+    });
+
+    if (typeof EngramsList !== 'undefined') {
+      renderEngrams(EngramsList);
+    } else {
+      console.error("EngramsList not defined in EngramsList.js");
+    }
+  </script>
+</body>
+</html>

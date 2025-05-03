@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ARK: Survival Ascended Recipe Editor</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: Tahoma, sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #e0f7ff;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      padding: 40px 0;
+    }
+    #main {
+      width: 95%;
+      max-width: 1300px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      color: #9cd5ff;
+      margin-bottom: 25px;
+      text-shadow: 0 0 5px #00bfff, 0 0 10px #0099cc, 1px 1px 2px #000;
+      border-bottom: 2px solid rgba(156, 213, 255, 0.4);
+      padding-bottom: 10px;
+    }
+    #nav { text-align: center; margin-bottom: 25px; }
+    #nav button, button {
+      background-color: #00557f;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .tab-toggle {
+      background-color: #002d4d;
+      color: #9cd5ff;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 10px 14px;
+      border-radius: 5px;
+      margin: 8px 0;
+      display: block;
+      border: 1px solid #2b6ca3;
+    }
+    .tab-content { display: none; margin-bottom: 20px; }
+    .engram-section {
+      background-color: rgba(10, 20, 30, 0.95);
+      border: 1px solid #2b6ca3;
+      border-radius: 6px;
+      padding: 18px;
+      margin: 15px 0;
+      box-shadow: 0 0 6px rgba(0, 128, 192, 0.3);
+    }
+    .ingredient-row {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 8px;
+      align-items: center;
+    }
+    input[type="number"], input[type="text"] {
+      background-color: #001d33;
+      color: white;
+      border: 1px solid #2b6ca3;
+      padding: 6px;
+      font-size: 14px;
+      flex: 1;
+    }
+    .custom-select { position: relative; width: 200px; }
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #001d33;
+      border: 1px solid #2b6ca3;
+      max-height: 200px;
+      overflow-y: auto;
+      display: none;
+      z-index: 999;
+    }
+    .dropdown div {
+      padding: 5px 8px;
+      cursor: pointer;
+      border-bottom: 1px solid #0d2c47;
+    }
+    .dropdown div:hover { background: #0a2f4a; }
+    textarea {
+      width: 100%;
+      height: 200px;
+      background-color: #001a2e;
+      color: #00ffff;
+      border: 1px solid #00ffff;
+      padding: 12px;
+      font-family: monospace;
+      font-size: 14px;
+      margin: 25px 0;
+      border-radius: 5px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #66ccee;
+      text-shadow: 0 0 2px #000;
+    }
+    .footer a {
+      color: #88ddff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <h1>ARK: Survival Ascended Crafting Override Editor</h1>
+    <div id="nav">
+      <button onclick="location.href='EngramsEditor.html'">Switch to Engram Editor</button>
+    </div>
+    <div id="recipeContainer"></div>
+    <h2>Generate Game.ini Overrides</h2>
+    <button onclick="generateRecipeOverride()">Generate</button>
+    <textarea id="recipeOutput" readonly></textarea>
+    <div class="footer">
+      Created by <a href="https://github.com/xMathayus">xMathayus</a> — ARK Engram Configuration Tool © 2025<br>
+      ☕ Like the tool? <a href="https://ko-fi.com/mathayus" target="_blank">Buy me a coffee!</a>
+    </div>
+  </div>
+
+  <script src="EngramsList.js"></script>
+  <script src="DefaultCraftingRecipes.js"></script>
+  <script>
+    const recipeContainer = document.getElementById('recipeContainer');
+    const recipeData = {};
+    const checkboxState = {};
+    const tabStates = {};
+    let recipesLoaded = false;
+
+    function persistAllInputs() {
+      for (const name in recipeData) {
+        recipeData[name].forEach(i => {
+          i.name = i._refs?.input?.value || i.name;
+          i.id = i._refs?.input?.dataset.id || i.id;
+          i.amount = parseFloat(i._refs?.amountInput?.value || i.amount || 1);
+        });
+      }
+      document.querySelectorAll('.recipe-checkbox').forEach(cb => {
+        checkboxState[cb.dataset.engram] = cb.checked;
+      });
+    }
+
+    function toggleTab(tabId) {
+      const tab = document.getElementById(tabId);
+      const shouldOpen = tab.style.display !== 'block';
+      tab.style.display = shouldOpen ? 'block' : 'none';
+      tabStates[tabId] = shouldOpen;
+    }
+
+    function createIngredientRow(ingredient, engramName) {
+      const row = document.createElement('div');
+      row.className = 'ingredient-row';
+      const amountInput = document.createElement('input');
+      amountInput.type = 'number';
+      amountInput.value = ingredient.amount;
+      const selectWrapper = document.createElement('div');
+      selectWrapper.className = 'custom-select';
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.placeholder = '-- Search --';
+      input.value = ingredient.name || '';
+      input.dataset.id = ingredient.id || '';
+      const dropdown = document.createElement('div');
+      dropdown.className = 'dropdown';
+
+      input.addEventListener('focus', () => {
+        dropdown.style.display = 'block';
+        if (!recipesLoaded) {
+          const script = document.createElement('script');
+          script.src = 'CraftingItems.js';
+          script.onload = () => {
+            recipesLoaded = true;
+            populateDropdown(input.value);
+          };
+          document.body.appendChild(script);
+        } else {
+          populateDropdown(input.value);
+        }
+      });
+
+      input.addEventListener('input', () => {
+        if (recipesLoaded) populateDropdown(input.value);
+      });
+
+      function populateDropdown(filter = '') {
+        dropdown.innerHTML = '';
+        CraftingItems.filter(r => r.name.toLowerCase().includes(filter.toLowerCase())).forEach(r => {
+          const item = document.createElement('div');
+          item.textContent = r.name;
+          item.onclick = () => {
+            input.value = r.name;
+            input.dataset.id = r.id;
+            dropdown.style.display = 'none';
+          };
+          dropdown.appendChild(item);
+        });
+      }
+
+      document.addEventListener('click', e => {
+        if (!selectWrapper.contains(e.target)) dropdown.style.display = 'none';
+      });
+
+      selectWrapper.appendChild(input);
+      selectWrapper.appendChild(dropdown);
+      if (!ingredient._uid) ingredient._uid = crypto.randomUUID();
+      ingredient._refs = { amountInput, input };
+
+      const addBtn = document.createElement('button');
+      addBtn.textContent = '+';
+      addBtn.onclick = () => {
+        persistAllInputs();
+        recipeData[engramName].push({ name: '', id: '', amount: 1, _uid: crypto.randomUUID() });
+        renderRecipes();
+      };
+
+      const delBtn = document.createElement('button');
+      delBtn.textContent = '-';
+      delBtn.onclick = () => {
+        recipeData[engramName] = recipeData[engramName].filter(i => i._uid !== ingredient._uid);
+        renderRecipes();
+      };
+
+      row.append(amountInput, selectWrapper, addBtn, delBtn);
+      return row;
+    }
+
+    function renderRecipes() {
+      persistAllInputs();
+      recipeContainer.innerHTML = '';
+      const thirdPartyWrapper = document.createElement('div');
+      thirdPartyWrapper.style.display = 'none';
+      const thirdPartyToggle = document.createElement('div');
+      thirdPartyToggle.className = 'tab-toggle';
+      thirdPartyToggle.textContent = '+ Show Third-Party Mod Engrams';
+      thirdPartyToggle.onclick = () => {
+        const visible = thirdPartyWrapper.style.display === 'block';
+        thirdPartyWrapper.style.display = visible ? 'none' : 'block';
+        thirdPartyToggle.textContent = visible ? '+ Show Third-Party Mod Engrams' : '– Hide Third-Party Mod Engrams';
+      };
+
+      let currentTab = null;
+      let isThirdParty = false;
+
+      for (const engram of EngramsList) {
+        if (engram.section === 'Skins') isThirdParty = true;
+        const container = isThirdParty && engram.section !== 'Skins' ? thirdPartyWrapper : recipeContainer;
+
+        if (engram.section) {
+          const tabId = 'tab_' + engram.section.replace(/\s+/g, '_');
+          const toggle = document.createElement('div');
+          toggle.className = 'tab-toggle';
+          toggle.textContent = '+ ' + engram.section;
+          toggle.onclick = () => toggleTab(tabId);
+          const tab = document.createElement('div');
+          tab.className = 'tab-content';
+          tab.id = tabId;
+          if (tabStates[tabId]) tab.style.display = 'block';
+          container.appendChild(toggle);
+          container.appendChild(tab);
+          currentTab = tab;
+        } else {
+          const defaultRecipe = DefaultCraftingRecipes.find(r => r.name === engram.name);
+          if (!recipeData[engram.name]) {
+            if (defaultRecipe) {
+              recipeData[engram.name] = defaultRecipe.ingredients.map(i => ({
+                name: i.resourceName || i.resource,
+                id: i.resource,
+                amount: i.amount,
+                _uid: crypto.randomUUID()
+              }));
+            } else {
+              continue;
+            }
+          }
+          const box = document.createElement('div');
+          box.className = 'engram-section';
+          const checked = checkboxState[engram.name] || false;
+          box.innerHTML = `<label><input type="checkbox" class="recipe-checkbox" data-engram="${engram.name}" ${checked ? 'checked' : ''}> <b>${engram.name}</b></label>`;
+          recipeData[engram.name].forEach(ingredient => {
+            const row = createIngredientRow(ingredient, engram.name);
+            box.appendChild(row);
+          });
+          (currentTab || container).appendChild(box);
+        }
+      }
+
+      recipeContainer.appendChild(thirdPartyToggle);
+      recipeContainer.appendChild(thirdPartyWrapper);
+    }
+
+    function generateRecipeOverride() {
+      persistAllInputs();
+      const output = [];
+
+      document.querySelectorAll('.recipe-checkbox:checked').forEach(cb => {
+        const name = cb.dataset.engram;
+        const id = DefaultCraftingRecipes.find(r => r.name === name)?.id || name;
+
+        const ingredients = (recipeData[name] || []).map(ing => {
+
+          let type = ing.id;
+
+          if (!type || type === ing.name) {
+            const match = CraftingItems.find(r => r.name.toLowerCase() === (ing.name || '').toLowerCase());
+            if (match) {
+              type = match.id;
+              ing.id = match.id; // update in case user typed manually
+            }
+          }
+
+          if (!type) return null;
+          const amt = parseFloat(ing.amount || 1).toFixed(1);
+          return `(ResourceItemTypeString="${type}",BaseResourceRequirement=${amt},bCraftingRequireExactResourceType=false)`;
+        }).filter(Boolean);
+
+        if (ingredients.length > 0) {
+      output.push(`ConfigOverrideItemCraftingCosts=(ItemClassString="${id}",BaseCraftingResourceRequirements=(${ingredients.join(',')}))`);
+        }
+      });
+
+      document.getElementById('recipeOutput').value = output.join('\n');
+    }
+
+    renderRecipes();
+  </script>
+</body>
+</html>
