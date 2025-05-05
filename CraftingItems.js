@@ -1,141 +1,5 @@
 const CraftingItems = [
   {
-    "name": "Abab Arthropleura M",
-    "id": "PrimalItemConsumable_ababArthropleuraM_C"
-  },
-  {
-    "name": "Ab Achatina F",
-    "id": "PrimalItemConsumable_abAchatinaF_C"
-  },
-  {
-    "name": "Ab Achatinam",
-    "id": "PrimalItemConsumable_abAchatinam_C"
-  },
-  {
-    "name": "Abanglerf",
-    "id": "PrimalItemConsumable_abanglerf_C"
-  },
-  {
-    "name": "Abanglerm",
-    "id": "PrimalItemConsumable_abanglerm_C"
-  },
-  {
-    "name": "Ab Ankylosaurus F",
-    "id": "PrimalItemConsumable_abAnkylosaurusF_C"
-  },
-  {
-    "name": "Ab Ankylosaurus M",
-    "id": "PrimalItemConsumable_abAnkylosaurusM_C"
-  },
-  {
-    "name": "Ab Araneom",
-    "id": "PrimalItemConsumable_abAraneom_C"
-  },
-  {
-    "name": "Ab Arthropleura F",
-    "id": "PrimalItemConsumable_abArthropleuraF_C"
-  },
-  {
-    "name": "Abb Araneo F",
-    "id": "PrimalItemConsumable_abbAraneoF_C"
-  },
-  {
-    "name": "Ab Bary F",
-    "id": "PrimalItemConsumable_abBaryF_C"
-  },
-  {
-    "name": "Ab Bary M",
-    "id": "PrimalItemConsumable_abBaryM_C"
-  },
-  {
-    "name": "Ab Beezlebufo F",
-    "id": "PrimalItemConsumable_abBeezlebufoF_C"
-  },
-  {
-    "name": "Ab Beezlebufo M",
-    "id": "PrimalItemConsumable_abBeezlebufoM_C"
-  },
-  {
-    "name": "Ab Bigfoot F",
-    "id": "PrimalItemConsumable_abBigfootF_C"
-  },
-  {
-    "name": "Ab Bigfoot M",
-    "id": "PrimalItemConsumable_abBigfootM_C"
-  },
-  {
-    "name": "Abb Starter",
-    "id": "PrimalItemConsumable_AbbStarter_C"
-  },
-  {
-    "name": "Ab Carbo F",
-    "id": "PrimalItemConsumable_abCarboF_C"
-  },
-  {
-    "name": "Ab Carbo M",
-    "id": "PrimalItemConsumable_abCarboM_C"
-  },
-  {
-    "name": "Ab Carno F",
-    "id": "PrimalItemConsumable_abCarnoF_C"
-  },
-  {
-    "name": "Ab Carno M",
-    "id": "PrimalItemConsumable_abCarnoM_C"
-  },
-  {
-    "name": "Ab Dime M",
-    "id": "PrimalItemConsumable_abDimeM_C"
-  },
-  {
-    "name": "Ab Dimetrodon F",
-    "id": "PrimalItemConsumable_abDimetrodonF_C"
-  },
-  {
-    "name": "Ab Dire Bear F",
-    "id": "PrimalItemConsumable_abDireBearF_C"
-  },
-  {
-    "name": "Ab Dire Bear M",
-    "id": "PrimalItemConsumable_abDireBearM_C"
-  },
-  {
-    "name": "Ab Dodo F",
-    "id": "PrimalItemConsumable_abDodoF_C"
-  },
-  {
-    "name": "Ab Dodo M",
-    "id": "PrimalItemConsumable_abDodoM_C"
-  },
-  {
-    "name": "Ab Doed F",
-    "id": "PrimalItemConsumable_abDoedF_C"
-  },
-  {
-    "name": "Ab Doed M1",
-    "id": "PrimalItemConsumable_abDoedM1_C"
-  },
-  {
-    "name": "Ab Dung F",
-    "id": "PrimalItemConsumable_abDungF_C"
-  },
-  {
-    "name": "Ab Electrof",
-    "id": "PrimalItemConsumable_abElectrof_C"
-  },
-  {
-    "name": "Ab Electrom",
-    "id": "PrimalItemConsumable_abElectrom_C"
-  },
-  {
-    "name": "Ab Equus F",
-    "id": "PrimalItemConsumable_abEquusF_C"
-  },
-  {
-    "name": "Ab Equus M",
-    "id": "PrimalItemConsumable_abEquusM_C"
-  },
-  {
     "name": "Aberration Helmet Skin",
     "id": "PrimalItemSkin_AberrationHelmet_C"
   },
@@ -144,128 +8,8 @@ const CraftingItems = [
     "id": "PrimalItemSkin_AberrationSword_C"
   },
   {
-    "name": "Ab Lystrosaurus M",
-    "id": "PrimalItemConsumable_abLystrosaurusM_C"
-  },
-  {
-    "name": "Ab Lystrosaurusn F",
-    "id": "PrimalItemConsumable_abLystrosaurusnF_C"
-  },
-  {
-    "name": "Ab Manta F",
-    "id": "PrimalItemConsumable_abMantaF_C"
-  },
-  {
-    "name": "Ab Manta M",
-    "id": "PrimalItemConsumable_abMantaM_C"
-  },
-  {
-    "name": "Ab Megalo F",
-    "id": "PrimalItemConsumable_abMegaloF_C"
-  },
-  {
-    "name": "Ab Megalo M",
-    "id": "PrimalItemConsumable_abMegaloM_C"
-  },
-  {
-    "name": "Ab Moschops F",
-    "id": "PrimalItemConsumable_abMoschopsF_C"
-  },
-  {
-    "name": "Ab Moschops M",
-    "id": "PrimalItemConsumable_abMoschopsM_C"
-  },
-  {
-    "name": "Ab Otter F",
-    "id": "PrimalItemConsumable_abOtterF_C"
-  },
-  {
-    "name": "Ab Otter M",
-    "id": "PrimalItemConsumable_abOtterM_C"
-  },
-  {
-    "name": "Ab Ovis F",
-    "id": "PrimalItemConsumable_abOvisF_C"
-  },
-  {
-    "name": "Ab Ovis M",
-    "id": "PrimalItemConsumable_abOvisM_C"
-  },
-  {
-    "name": "Ab Paracer F",
-    "id": "PrimalItemConsumable_abParacerF_C"
-  },
-  {
-    "name": "Ab Paracer M",
-    "id": "PrimalItemConsumable_abParacerM_C"
-  },
-  {
-    "name": "Ab Parasaur F",
-    "id": "PrimalItemConsumable_abParasaurF_C"
-  },
-  {
-    "name": "Ab Parasaur M",
-    "id": "PrimalItemConsumable_abParasaurM_C"
-  },
-  {
-    "name": "Ab Purlovia F",
-    "id": "PrimalItemConsumable_abPurloviaF_C"
-  },
-  {
-    "name": "Ab Purlovia M",
-    "id": "PrimalItemConsumable_abPurloviaM_C"
-  },
-  {
-    "name": "Ab Raptor F",
-    "id": "PrimalItemConsumable_abRaptorF_C"
-  },
-  {
-    "name": "Ab Raptor M",
-    "id": "PrimalItemConsumable_abRaptorM_C"
-  },
-  {
-    "name": "Ab Sarco F",
-    "id": "PrimalItemConsumable_abSarcoF_C"
-  },
-  {
-    "name": "Ab Sarco M",
-    "id": "PrimalItemConsumable_abSarcoM_C"
-  },
-  {
-    "name": "Ab Spino F",
-    "id": "PrimalItemConsumable_abSpinoF_C"
-  },
-  {
-    "name": "Ab Spino M",
-    "id": "PrimalItemConsumable_abSpinoM_C"
-  },
-  {
-    "name": "Ab Stego F",
-    "id": "PrimalItemConsumable_abStegoF_C"
-  },
-  {
-    "name": "Ab Stego M",
-    "id": "PrimalItemConsumable_abStegoM_C"
-  },
-  {
-    "name": "Ab Trike M",
-    "id": "PrimalItemConsumable_abTrikeM_C"
-  },
-  {
-    "name": "Ab Trikeo F",
-    "id": "PrimalItemConsumable_abTrikeoF_C"
-  },
-  {
     "name": "Achatina 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Achatina_C"
-  },
-  {
-    "name": "Achatina F",
-    "id": "PrimalItemConsumable_AchatinaF_C"
-  },
-  {
-    "name": "Achatinam",
-    "id": "PrimalItemConsumable_Achatinam_C"
   },
   {
     "name": "Achatina Paste (VE)",
@@ -290,14 +34,6 @@ const CraftingItems = [
   {
     "name": "Alasie 'ARK: The Animated Series' Costume Skin (Dear Jane)",
     "id": "PrimalItemSkin_CharacterSkin_Alasie_C"
-  },
-  {
-    "name": "Allofemale",
-    "id": "PrimalItemConsumable_allofemale_C"
-  },
-  {
-    "name": "Allomale",
-    "id": "PrimalItemConsumable_allomale_C"
   },
   {
     "name": "Allosaurus 'ARK: The Animated Series' Costume",
@@ -400,10 +136,6 @@ const CraftingItems = [
     "id": "PrimalItemResource_AmargaSpike_ASA_C"
   },
   {
-    "name": "Ammo Kit1",
-    "id": "PrimalItemConsumable_AmmoKit1_C"
-  },
-  {
     "name": "Ammonite Bile",
     "id": "PrimalItemResource_AmmoniteBlood_C"
   },
@@ -416,20 +148,12 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Seed_Angelberry_C"
   },
   {
-    "name": "Anglerf",
-    "id": "PrimalItemConsumable_anglerf_C"
-  },
-  {
     "name": "Anglerfish 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Anglerfish_C"
   },
   {
     "name": "Angler Gel",
     "id": "PrimalItemResource_AnglerGel_C"
-  },
-  {
-    "name": "Anglerm",
-    "id": "PrimalItemConsumable_anglerm_C"
   },
   {
     "name": "Ankylo Egg",
@@ -442,14 +166,6 @@ const CraftingItems = [
   {
     "name": "Ankylosaurus 'ARK: The Animated Series' Costume (Dear Jane)",
     "id": "PrimalItemCostume_AAA_Ankylo_C"
-  },
-  {
-    "name": "Ankylosaurus F",
-    "id": "PrimalItemConsumable_AnkylosaurusF_C"
-  },
-  {
-    "name": "Ankylosaurus M",
-    "id": "PrimalItemConsumable_AnkylosaurusM_C"
   },
   {
     "name": "Anomalocaris Egg",
@@ -588,14 +304,6 @@ const CraftingItems = [
     "id": "PrimalItem_AoACoin_C"
   },
   {
-    "name": "Ao A Coin",
-    "id": "PrimalItem_AoACoin_C"
-  },
-  {
-    "name": "Ao A Present",
-    "id": "PrimalItemConsumable_AoAPresent_C"
-  },
-  {
     "name": "Apex Drop Chaotic Crystal",
     "id": "PrimalItemResource_ApexDrop_ChaoticCrystal_C"
   },
@@ -632,28 +340,12 @@ const CraftingItems = [
     "id": "PrimalItemCostume_AAA_Spider_Small_C"
   },
   {
-    "name": "Araneo F",
-    "id": "PrimalItemConsumable_AraneoF_C"
-  },
-  {
-    "name": "Araneom",
-    "id": "PrimalItemConsumable_Araneom_C"
-  },
-  {
     "name": "Archaeopteryx 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Archaeopteryx_C"
   },
   {
     "name": "Archaeopteryx Egg",
     "id": "PrimalItemConsumable_Egg_Archa_C"
-  },
-  {
-    "name": "Archaeopteryx F",
-    "id": "PrimalItemConsumable_ArchaeopteryxF_C"
-  },
-  {
-    "name": "Archaeopteryx M",
-    "id": "PrimalItemConsumable_ArchaeopteryxM_C"
   },
   {
     "name": "Archelon Algae",
@@ -674,14 +366,6 @@ const CraftingItems = [
   {
     "name": "Argentavis Egg",
     "id": "PrimalItemConsumable_Egg_Argent_C"
-  },
-  {
-    "name": "Argentavis F",
-    "id": "PrimalItemConsumable_ArgentavisF_C"
-  },
-  {
-    "name": "Argentavis M",
-    "id": "PrimalItemConsumable_ArgentavisM_C"
   },
   {
     "name": "Argentavis Talon",
@@ -734,14 +418,6 @@ const CraftingItems = [
   {
     "name": "ARK Thorny Dragon Saddle Skin",
     "id": "PrimalItemArmor_SpineyLizardPromoSaddle_C"
-  },
-  {
-    "name": "Arthropleura F",
-    "id": "PrimalItemConsumable_ArthropleuraF_C"
-  },
-  {
-    "name": "Arthropleura M",
-    "id": "PrimalItemConsumable_ArthropleuraM_C"
   },
   {
     "name": "Arthropluera 'ARK: The Animated Series' Costume",
@@ -860,14 +536,6 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Kibble_DraconicEssence_Azure_C"
   },
   {
-    "name": "Bary F",
-    "id": "PrimalItemConsumable_BaryF_C"
-  },
-  {
-    "name": "Bary M",
-    "id": "PrimalItemConsumable_BaryM_C"
-  },
-  {
     "name": "Baryonyx 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Baryonyx_C"
   },
@@ -896,24 +564,8 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Egg_Basilisk_C"
   },
   {
-    "name": "Basilisk F",
-    "id": "PrimalItemConsumable_BasiliskF_C"
-  },
-  {
-    "name": "Basilisk M",
-    "id": "PrimalItemConsumable_BasiliskM_C"
-  },
-  {
     "name": "Basilisk Scale",
     "id": "PrimalItemResource_ApexDrop_Basilisk_C"
-  },
-  {
-    "name": "Basilof",
-    "id": "PrimalItemConsumable_Basilof_C"
-  },
-  {
-    "name": "Basilom",
-    "id": "PrimalItemConsumable_Basilom_C"
   },
   {
     "name": "Basilosaurus 'ARK: The Animated Series' Costume",
@@ -924,32 +576,8 @@ const CraftingItems = [
     "id": "PrimalItemResource_ApexDrop_Basilo_C"
   },
   {
-    "name": "Battlebox",
-    "id": "PrimalItemConsumable_Battlebox_C"
-  },
-  {
     "name": "Beelzebufo 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Toad_C"
-  },
-  {
-    "name": "Beerbox",
-    "id": "PrimalItemConsumable_Beerbox_C"
-  },
-  {
-    "name": "Beezleab Dung M",
-    "id": "PrimalItemConsumable_BeezleabDungM_C"
-  },
-  {
-    "name": "Beezlebufo F",
-    "id": "PrimalItemConsumable_BeezlebufoF_C"
-  },
-  {
-    "name": "Beezlebufo M",
-    "id": "PrimalItemConsumable_BeezlebufoM_C"
-  },
-  {
-    "name": "Beezle Dung M",
-    "id": "PrimalItemConsumable_BeezleDungM_C"
   },
   {
     "name": "Berry Bush Seed",
@@ -988,28 +616,12 @@ const CraftingItems = [
     "id": "PrimalItem_BetterTrainEngine_C"
   },
   {
-    "name": "Bigfoot F",
-    "id": "PrimalItemConsumable_BigfootF_C"
-  },
-  {
-    "name": "Bigfoot M",
-    "id": "PrimalItemConsumable_BigfootM_C"
-  },
-  {
     "name": "Bingleberry",
     "id": "PrimalItemConsumable_Berry_Base_C"
   },
   {
-    "name": "Black Dye Soup",
-    "id": "PrimalItemConsumable_BlackDyeSoup_C"
-  },
-  {
     "name": "Black Pearl",
     "id": "PrimalItemResource_BlackPearl_C"
-  },
-  {
-    "name": "Black Pearl",
-    "id": "PrimalItemConsumable_BlackPearl_C"
   },
   {
     "name": "Black Pearl",
@@ -1032,16 +644,8 @@ const CraftingItems = [
     "id": "PrimalItemResource_BlueSap_C"
   },
   {
-    "name": "Blue Dye Soup",
-    "id": "PrimalItemConsumable_BlueDyeSoup_C"
-  },
-  {
     "name": "Blue Gem",
     "id": "PrimalItemResource_Gem_BioLum_C"
-  },
-  {
-    "name": "Blue Gem",
-    "id": "PrimalItemConsumable_BlueGem_C"
   },
   {
     "name": "Boat Flag",
@@ -1056,10 +660,6 @@ const CraftingItems = [
     "id": "PrimalItemSkin_CharacterSkin_Bob_C"
   },
   {
-    "name": "Bossunlock",
-    "id": "PrimalItemConsumable_bossunlock_C"
-  },
-  {
     "name": "Bronto 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Sauropod_SkinPack_C"
   },
@@ -1072,20 +672,8 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Egg_Bronto_C"
   },
   {
-    "name": "Bronto F",
-    "id": "PrimalItemConsumable_BrontoF_C"
-  },
-  {
-    "name": "Bronto M",
-    "id": "PrimalItemConsumable_BrontoM_C"
-  },
-  {
     "name": "Broodmother Trophy",
     "id": "PrimalItemTrophy_Broodmother_C"
-  },
-  {
-    "name": "Brothofebox",
-    "id": "PrimalItemConsumable_brothofebox_C"
   },
   {
     "name": "BS Coin",
@@ -1104,24 +692,12 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_BSPoints_100000_C"
   },
   {
-    "name": "Bulbdog F",
-    "id": "PrimalItemConsumable_BulbdogF_C"
-  },
-  {
-    "name": "Bulbdog M",
-    "id": "PrimalItemConsumable_BulbdogM_C"
-  },
-  {
     "name": "Bulbdog Mask",
     "id": "PrimalItemSkin_PugMask_C"
   },
   {
     "name": "Bunny Ears Skin",
     "id": "PrimalItemSkin_BunnyHat_C"
-  },
-  {
-    "name": "Cactusbox",
-    "id": "PrimalItemConsumable_Cactusbox_C"
   },
   {
     "name": "Cactus Sap",
@@ -1132,20 +708,8 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Berry_Caeruleweed_C"
   },
   {
-    "name": "Calienbox",
-    "id": "PrimalItemConsumable_Calienbox_C"
-  },
-  {
     "name": "Captains Hat",
     "id": "PrimalItemSkin_CaptainsHat_C"
-  },
-  {
-    "name": "Carbo F",
-    "id": "PrimalItemConsumable_CarboF_C"
-  },
-  {
-    "name": "Carbo M",
-    "id": "PrimalItemConsumable_CarboM_C"
   },
   {
     "name": "Carbonemys 'ARK: The Animated Series' Costume",
@@ -1154,14 +718,6 @@ const CraftingItems = [
   {
     "name": "Carbonemys Egg",
     "id": "PrimalItemConsumable_Egg_Turtle_C"
-  },
-  {
-    "name": "Carcha F",
-    "id": "PrimalItemConsumable_CarchaF_C"
-  },
-  {
-    "name": "Carcha M",
-    "id": "PrimalItemConsumable_CarchaM_C"
   },
   {
     "name": "Carcharodontosaurus 'ARK: The Animated Series' Costume",
@@ -1176,14 +732,6 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Egg_Carno_C"
   },
   {
-    "name": "Carno F",
-    "id": "PrimalItemConsumable_CarnoF_C"
-  },
-  {
-    "name": "Carno M",
-    "id": "PrimalItemConsumable_CarnoM_C"
-  },
-  {
     "name": "Carnotaurus 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Carno_C"
   },
@@ -1192,28 +740,8 @@ const CraftingItems = [
     "id": "PrimalItemCostume_AAA_Beaver_C"
   },
   {
-    "name": "Castoroides F",
-    "id": "PrimalItemConsumable_CastoroidesF_C"
-  },
-  {
-    "name": "Castoroides M",
-    "id": "PrimalItemConsumable_CastoroidesM_C"
-  },
-  {
     "name": "Celerweed",
     "id": "PrimalItemConsumable_Berry_Celerweed_C"
-  },
-  {
-    "name": "Cement",
-    "id": "PrimalItemConsumable_Cement_C"
-  },
-  {
-    "name": "Cerato F",
-    "id": "PrimalItemConsumable_CeratoF_C"
-  },
-  {
-    "name": "Cerato M",
-    "id": "PrimalItemConsumable_CeratoM_C"
   },
   {
     "name": "Ceratosaurus Egg",
@@ -1226,14 +754,6 @@ const CraftingItems = [
   {
     "name": "Chalicotherium 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Chalicotherium_C"
-  },
-  {
-    "name": "Chalicotherium F",
-    "id": "PrimalItemConsumable_ChalicotheriumF_C"
-  },
-  {
-    "name": "Chalicotherium M",
-    "id": "PrimalItemConsumable_ChalicotheriumM_C"
   },
   {
     "name": "Chaotic Wyvern Milk",
@@ -1921,10 +1441,6 @@ const CraftingItems = [
   },
   {
     "name": "Crystal",
-    "id": "PrimalItemConsumable_Crystal_C"
-  },
-  {
-    "name": "Crystal",
     "id": "PrimalItemResource_Crystal_C"
   },
   {
@@ -1964,24 +1480,12 @@ const CraftingItems = [
     "id": "PrimalItemSkin_DinoCute_C"
   },
   {
-    "name": "Cyan Dye Soup",
-    "id": "PrimalItemConsumable_CyanDyeSoup_C"
-  },
-  {
     "name": "Daeodon 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Daeodon_SkinPack_C"
   },
   {
     "name": "Daeodon 'ARK: The Animated Series' Costume (Dear Jane)",
     "id": "PrimalItemCostume_AAA_Daeodon_C"
-  },
-  {
-    "name": "Daeodon F",
-    "id": "PrimalItemConsumable_DaeodonF_C"
-  },
-  {
-    "name": "Daeodon M",
-    "id": "PrimalItemConsumable_DaeodonM_C"
   },
   {
     "name": "Dark Atlar",
@@ -2004,14 +1508,6 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Egg_Deino_ASA_C"
   },
   {
-    "name": "Deinosuchus F",
-    "id": "PrimalItemConsumable_DeinosuchusF_C"
-  },
-  {
-    "name": "Deinosuchus M",
-    "id": "PrimalItemConsumable_DeinosuchusM_C"
-  },
-  {
     "name": "Desert Titan Trophy",
     "id": "PrimalItemTrophy_Kaiju_Desert_C"
   },
@@ -2028,20 +1524,12 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Egg_Dilo_C"
   },
   {
-    "name": "Dime M",
-    "id": "PrimalItemConsumable_DimeM_C"
-  },
-  {
     "name": "Dimetrodon 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Dimetrodon_C"
   },
   {
     "name": "Dimetrodon Egg",
     "id": "PrimalItemConsumable_Egg_Dimetrodon_C"
-  },
-  {
-    "name": "Dimetrodon F",
-    "id": "PrimalItemConsumable_DimetrodonF_C"
   },
   {
     "name": "Dimorph Egg",
@@ -2088,24 +1576,8 @@ const CraftingItems = [
     "id": "PrimalItemCostume_AAA_DireBear_C"
   },
   {
-    "name": "Dire Bear F",
-    "id": "PrimalItemConsumable_DireBearF_C"
-  },
-  {
-    "name": "Dire Bear M",
-    "id": "PrimalItemConsumable_DireBearM_C"
-  },
-  {
     "name": "Direwolf 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Direwolf_C"
-  },
-  {
-    "name": "Dire Wolf F",
-    "id": "PrimalItemConsumable_DireWolfF_C"
-  },
-  {
-    "name": "Dire Wolf M",
-    "id": "PrimalItemConsumable_DireWolfM_C"
   },
   {
     "name": "Dodo 'ARK: The Animated Series' Costume",
@@ -2120,14 +1592,6 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Egg_Dodo_C"
   },
   {
-    "name": "Dodo F",
-    "id": "PrimalItemConsumable_DodoF_C"
-  },
-  {
-    "name": "Dodo M",
-    "id": "PrimalItemConsumable_DodoM_C"
-  },
-  {
     "name": "DodoRex Tribute (Winter Wonderland)",
     "id": "PrimalItem_DodoRexTribute_WinterWonderland_C"
   },
@@ -2136,20 +1600,12 @@ const CraftingItems = [
     "id": "PrimalItemSkin_DodowyvernHat_C"
   },
   {
-    "name": "Doed F",
-    "id": "PrimalItemConsumable_DoedF_C"
-  },
-  {
     "name": "Doedicurus 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Doedicurus_SkinPack_C"
   },
   {
     "name": "Doedicurus 'ARK: The Animated Series' Costume (Dear Jane)",
     "id": "PrimalItemCostume_AAA_Doedicurus_C"
-  },
-  {
-    "name": "Doed M1",
-    "id": "PrimalItemConsumable_DoedM1_C"
   },
   {
     "name": "Draconic Altar",
@@ -2216,44 +1672,12 @@ const CraftingItems = [
     "id": "PrimalItemTrophy_Dragon_C"
   },
   {
-    "name": "Dragon Unlock",
-    "id": "PrimalItemConsumable_DragonUnlock_C"
-  },
-  {
-    "name": "Dreadmare F",
-    "id": "PrimalItemConsumable_DreadmareF_C"
-  },
-  {
-    "name": "Dreadmare M",
-    "id": "PrimalItemConsumable_DreadmareM_C"
-  },
-  {
-    "name": "Dreadn F",
-    "id": "PrimalItemConsumable_dreadnF_C"
-  },
-  {
-    "name": "Dreadn M",
-    "id": "PrimalItemConsumable_DreadnM_C"
-  },
-  {
     "name": "Dreadnoughtus Egg",
     "id": "PrimalItemConsumable_Egg_Dreadnoughtus_C"
   },
   {
     "name": "Dung Beetle 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_DungBeetle_C"
-  },
-  {
-    "name": "Dung F",
-    "id": "PrimalItemConsumable_DungF_C"
-  },
-  {
-    "name": "Dunkleof",
-    "id": "PrimalItemConsumable_Dunkleof_C"
-  },
-  {
-    "name": "Dunkleom",
-    "id": "PrimalItemConsumable_Dunkleom_C"
   },
   {
     "name": "Dunkleosteus 'ARK: The Animated Series' Costume",
@@ -2400,18 +1824,6 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_ElderWyvernMilk_C"
   },
   {
-    "name": "Electrof",
-    "id": "PrimalItemConsumable_Electrof_C"
-  },
-  {
-    "name": "Electrom",
-    "id": "PrimalItemConsumable_Electrom_C"
-  },
-  {
-    "name": "Electronics",
-    "id": "PrimalItemConsumable_Electronics_C"
-  },
-  {
     "name": "Electrophorus 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Eel_C"
   },
@@ -2424,44 +1836,8 @@ const CraftingItems = [
     "id": "PrimalItemResource_TransferElement_CCM_C"
   },
   {
-    "name": "Endro Stewbox",
-    "id": "PrimalItemConsumable_EndroStewbox_C"
-  },
-  {
-    "name": "Energy Brew Box",
-    "id": "PrimalItemConsumable_EnergyBrewBox_C"
-  },
-  {
     "name": "Equus 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Equus_C"
-  },
-  {
-    "name": "Equus F",
-    "id": "PrimalItemConsumable_EquusF_C"
-  },
-  {
-    "name": "Equus M",
-    "id": "PrimalItemConsumable_EquusM_C"
-  },
-  {
-    "name": "Event Boots",
-    "id": "PrimalItemArmor_EventBoots_C"
-  },
-  {
-    "name": "Event Gloves",
-    "id": "PrimalItemArmor_EventGloves_C"
-  },
-  {
-    "name": "Event Helmet",
-    "id": "PrimalItemArmor_EventHelmet_C"
-  },
-  {
-    "name": "Event Pants",
-    "id": "PrimalItemArmor_EventPants_C"
-  },
-  {
-    "name": "Event Shirt",
-    "id": "PrimalItemArmor_EventShirt_C"
   },
   {
     "name": "Exceptional Fertilized Maeguana Egg",
@@ -2472,38 +1848,6 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Egg_Maelizard_XLarge_C"
   },
   {
-    "name": "Explorer Aberration",
-    "id": "PrimalItemConsumable_ExplorerAberration_C"
-  },
-  {
-    "name": "Explorer All",
-    "id": "PrimalItemConsumable_ExplorerAll_C"
-  },
-  {
-    "name": "Explorer Bobs",
-    "id": "PrimalItemConsumable_ExplorerBobs_C"
-  },
-  {
-    "name": "Explorer Bobs Abb",
-    "id": "PrimalItemConsumable_ExplorerBobsAbb_C"
-  },
-  {
-    "name": "Explorer Bobs Scorch",
-    "id": "PrimalItemConsumable_ExplorerBobsScorch_C"
-  },
-  {
-    "name": "Explorer Bobs Test",
-    "id": "PrimalItemConsumable_ExplorerBobsTest_C"
-  },
-  {
-    "name": "Explorer Island",
-    "id": "PrimalItemConsumable_ExplorerIsland_C"
-  },
-  {
-    "name": "Explorer Scorched",
-    "id": "PrimalItemConsumable_ExplorerScorched_C"
-  },
-  {
     "name": "Extraordinary Fertilized Maeguana Egg",
     "id": "PrimalItemConsumable_Egg_Maelizard_Special_Fertilized_C"
   },
@@ -2512,28 +1856,12 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Egg_Maelizard_Special_C"
   },
   {
-    "name": "Faso F",
-    "id": "PrimalItemConsumable_FasoF_C"
-  },
-  {
     "name": "Fasolasuchus Egg",
     "id": "PrimalItemConsumable_Egg_Fasola_C"
   },
   {
-    "name": "Faso M",
-    "id": "PrimalItemConsumable_FasoM_C"
-  },
-  {
     "name": "Featherlight Egg",
     "id": "PrimalItemConsumable_Egg_LanternBird_C"
-  },
-  {
-    "name": "Featherlight F",
-    "id": "PrimalItemConsumable_FeatherlightF_C"
-  },
-  {
-    "name": "Featherlight M",
-    "id": "PrimalItemConsumable_FeatherlightM_C"
   },
   {
     "name": "Fertilized Aberrant Angler Egg",
@@ -3089,10 +2417,6 @@ const CraftingItems = [
   },
   {
     "name": "Fiber",
-    "id": "PrimalItemConsumable_Fiber_C"
-  },
-  {
-    "name": "Fiber",
     "id": "PrimalItemResource_Fibers_C"
   },
   {
@@ -3102,14 +2426,6 @@ const CraftingItems = [
   {
     "name": "Fire Talon (Draconic)",
     "id": "PrimalItemResource_ApexDrop_FireWyvern_Child_C"
-  },
-  {
-    "name": "Firewyv F",
-    "id": "PrimalItemConsumable_firewyvF_C"
-  },
-  {
-    "name": "Firewyv M",
-    "id": "PrimalItemConsumable_firewyvM_C"
   },
   {
     "name": "Fjordhawk Egg",
@@ -3128,24 +2444,12 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Berry_Flavoweed_C"
   },
   {
-    "name": "Flint",
-    "id": "PrimalItemConsumable_Flint_C"
-  },
-  {
-    "name": "Focalbox",
-    "id": "PrimalItemConsumable_Focalbox_C"
-  },
-  {
     "name": "Forest Titan Trophy",
     "id": "PrimalItemTrophy_Kaiju_Forest_C"
   },
   {
     "name": "Fragmented Green Gem",
     "id": "PrimalItemResource_FracturedGem_C"
-  },
-  {
-    "name": "Friabox",
-    "id": "PrimalItemConsumable_Friabox_C"
   },
   {
     "name": "Fungal Wood",
@@ -3166,14 +2470,6 @@ const CraftingItems = [
   {
     "name": "Gallimimus Egg",
     "id": "PrimalItemConsumable_Egg_Galli_C"
-  },
-  {
-    "name": "Gallimimus F",
-    "id": "PrimalItemConsumable_GallimimusF_C"
-  },
-  {
-    "name": "Gallimimus M",
-    "id": "PrimalItemConsumable_GallimimusM_C"
   },
   {
     "name": "Gamma Broodmother Trophy",
@@ -3200,14 +2496,6 @@ const CraftingItems = [
     "id": "PrimalItemTrophy_Cyclops_Gamma_C"
   },
   {
-    "name": "Gasbag F",
-    "id": "PrimalItemConsumable_GasbagF_C"
-  },
-  {
-    "name": "Gasbag M",
-    "id": "PrimalItemConsumable_GasbagM_C"
-  },
-  {
     "name": "Gasbags bladder",
     "id": "PrimalItemResource_ApexDrop_GasBag_C"
   },
@@ -3220,20 +2508,8 @@ const CraftingItems = [
     "id": "PI_PlaceableSPV_C"
   },
   {
-    "name": "Giant Bee",
-    "id": "PrimalItemConsumable_GiantBee_C"
-  },
-  {
     "name": "Giant Queen Bee 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Bee_C"
-  },
-  {
-    "name": "Giga F",
-    "id": "PrimalItemConsumable_GigaF_C"
-  },
-  {
-    "name": "Giga M",
-    "id": "PrimalItemConsumable_GigaM_C"
   },
   {
     "name": "Giganotosaurus 'ARK: The Animated Series' Costume",
@@ -3276,28 +2552,8 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Egg_LanternLizard_C"
   },
   {
-    "name": "Glowtail F",
-    "id": "PrimalItemConsumable_GlowtailF_C"
-  },
-  {
-    "name": "Glowtail M",
-    "id": "PrimalItemConsumable_GlowtailM_C"
-  },
-  {
     "name": "Golden Egg",
     "id": "PrimalItemConsumable_Egg_Hesperonis_Golden_C"
-  },
-  {
-    "name": "Gorilla Unlock",
-    "id": "PrimalItemConsumable_GorillaUnlock_C"
-  },
-  {
-    "name": "Grap F",
-    "id": "PrimalItemConsumable_GrapF_C"
-  },
-  {
-    "name": "Grap M",
-    "id": "PrimalItemConsumable_GrapM_C"
   },
   {
     "name": "Greater Ambusher's (Projectile Trait)",
@@ -3380,16 +2636,8 @@ const CraftingItems = [
     "id": "PrimalItem_ItemTrait_Melee_IncreasedDamageToNonLiving_C"
   },
   {
-    "name": "Green Dye Soup",
-    "id": "PrimalItemConsumable_GreenDyeSoup_C"
-  },
-  {
     "name": "Green Gem",
     "id": "PrimalItemResource_Gem_Fertile_C"
-  },
-  {
-    "name": "Greengem",
-    "id": "PrimalItemConsumable_Greengem_C"
   },
   {
     "name": "Helena Walker 'ARK: The Animated Series' Costume Skin",
@@ -3416,24 +2664,12 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Egg_Hesperonis_C"
   },
   {
-    "name": "Hesperonis F",
-    "id": "PrimalItemConsumable_HesperonisF_C"
-  },
-  {
-    "name": "Hesperonis M",
-    "id": "PrimalItemConsumable_HesperonisM_C"
-  },
-  {
     "name": "Hesperornis 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Hesperornis_C"
   },
   {
     "name": "Hide",
     "id": "PrimalItemResource_Hide_C"
-  },
-  {
-    "name": "Hide",
-    "id": "PrimalItemConsumable_Hide_C"
   },
   {
     "name": "Honey",
@@ -3450,14 +2686,6 @@ const CraftingItems = [
   {
     "name": "Hyaenodon 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Hyaenodon_C"
-  },
-  {
-    "name": "Hyaenodon F",
-    "id": "PrimalItemConsumable_HyaenodonF_C"
-  },
-  {
-    "name": "Hyaenodon M",
-    "id": "PrimalItemConsumable_HyaenodonM_C"
   },
   {
     "name": "Hydro Dragon Tek Armor",
@@ -3480,32 +2708,12 @@ const CraftingItems = [
     "id": "PrimalItemCostume_AAA_Dolphin_C"
   },
   {
-    "name": "Ichythyornis F",
-    "id": "PrimalItemConsumable_IchythyornisF_C"
-  },
-  {
-    "name": "Ichythyornis M",
-    "id": "PrimalItemConsumable_IchythyornisM_C"
-  },
-  {
     "name": "Iguanodon 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Iguanodon_C"
   },
   {
     "name": "Iguanodon Egg",
     "id": "PrimalItemConsumable_Egg_Iguanodon_C"
-  },
-  {
-    "name": "Iguanodon F",
-    "id": "PrimalItemConsumable_IguanodonF_C"
-  },
-  {
-    "name": "Iguanodon M",
-    "id": "PrimalItemConsumable_IguanodonM_C"
-  },
-  {
-    "name": "Ingots",
-    "id": "PrimalItemConsumable_Ingots_C"
   },
   {
     "name": "Instant-Grow Amarberry Seed",
@@ -3568,24 +2776,12 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Seed_Verdberry_SpeedHack_C"
   },
   {
-    "name": "Island Asc",
-    "id": "PrimalItemConsumable_IslandAsc_C"
-  },
-  {
     "name": "Jane 'ARK: The Animated Series' Costume Skin",
     "id": "PrimalItemSkin_CharacterSkin_Jane_C"
   },
   {
     "name": "Jerboa Bone Costume",
     "id": "PrimalItemCostume_BoneJerboa_C"
-  },
-  {
-    "name": "Jerboa F",
-    "id": "PrimalItemConsumable_JerboaF_C"
-  },
-  {
-    "name": "Jerboa M",
-    "id": "PrimalItemConsumable_JerboaM_C"
   },
   {
     "name": "John 'ARK: The Animated Series' Costume Skin",
@@ -3644,36 +2840,12 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Egg_Kairuku_C"
   },
   {
-    "name": "Kairuku F",
-    "id": "PrimalItemConsumable_KairukuF_C"
-  },
-  {
-    "name": "Kairuku M",
-    "id": "PrimalItemConsumable_KairukuM_C"
-  },
-  {
     "name": "Kaprosuchus 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Kaprosuchus_C"
   },
   {
     "name": "Kaprosuchus Egg",
     "id": "PrimalItemConsumable_Egg_Kaprosuchus_C"
-  },
-  {
-    "name": "Kaprosuchus F",
-    "id": "PrimalItemConsumable_KaprosuchusF_C"
-  },
-  {
-    "name": "Kaprosuchus M",
-    "id": "PrimalItemConsumable_KaprosuchusM_C"
-  },
-  {
-    "name": "Karkinos F",
-    "id": "PrimalItemConsumable_KarkinosF_C"
-  },
-  {
-    "name": "Karkinos M",
-    "id": "PrimalItemConsumable_KarkinosM_C"
   },
   {
     "name": "Kelp",
@@ -3832,10 +3004,6 @@ const CraftingItems = [
     "id": "PrimalItemArmor_CharmFragment_0_Base_Large_C"
   },
   {
-    "name": "Large Base Kit",
-    "id": "PrimalItemConsumable_LargeBaseKit_C"
-  },
-  {
     "name": "Large Journeyman Fragment",
     "id": "PrimalItemArmor_CharmFragment_4_Journeyman_Large_C"
   },
@@ -3854,10 +3022,6 @@ const CraftingItems = [
   {
     "name": "Large Saddlebags",
     "id": "PrimalItem_SaddleBags_Large_BH_C"
-  },
-  {
-    "name": "Lazarusbox",
-    "id": "PrimalItemConsumable_Lazarusbox_C"
   },
   {
     "name": "Leech Blood",
@@ -3886,10 +3050,6 @@ const CraftingItems = [
   {
     "name": "Lesser Big Game Hunter\u2019s (Projectile Trait)",
     "id": "PrimalItem_ItemTrait_Projectile_IncreasedDamageToAlpha_Lesser_C"
-  },
-  {
-    "name": "Lesserbox",
-    "id": "PrimalItemConsumable_Lesserbox_C"
   },
   {
     "name": "Lesser Cannibalizing (Gun Trait)",
@@ -3960,14 +3120,6 @@ const CraftingItems = [
     "id": "PrimalItemResource_ApexDrop_LightningWyvern_Child_C"
   },
   {
-    "name": "Lightwyv F",
-    "id": "PrimalItemConsumable_lightwyvF_C"
-  },
-  {
-    "name": "Lightwyv M",
-    "id": "PrimalItemConsumable_lightwyvM_C"
-  },
-  {
     "name": "Loadout Dummy Hotbar",
     "id": "PrimalItemStructure_LoadoutDummyHotbar_C"
   },
@@ -3992,14 +3144,6 @@ const CraftingItems = [
     "id": "PrimalItemCostume_AAA_Lystrosaurus_C"
   },
   {
-    "name": "Lystrosaurus M",
-    "id": "PrimalItemConsumable_LystrosaurusM_C"
-  },
-  {
-    "name": "Lystrosaurusn F",
-    "id": "PrimalItemConsumable_LystrosaurusnF_C"
-  },
-  {
     "name": "Magenberry",
     "id": "PrimalItemConsumable_Berry_Magenberry_C"
   },
@@ -4016,32 +3160,8 @@ const CraftingItems = [
     "id": "PrimalItemCostume_AAA_Mammoth_C"
   },
   {
-    "name": "Mammoth F",
-    "id": "PrimalItemConsumable_MammothF_C"
-  },
-  {
-    "name": "Mammotho M",
-    "id": "PrimalItemConsumable_MammothoM_C"
-  },
-  {
-    "name": "Mana F",
-    "id": "PrimalItemConsumable_ManaF_C"
-  },
-  {
-    "name": "Mana M",
-    "id": "PrimalItemConsumable_ManaM_C"
-  },
-  {
     "name": "Manta 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Manta_C"
-  },
-  {
-    "name": "Manta F",
-    "id": "PrimalItemConsumable_MantaF_C"
-  },
-  {
-    "name": "Manta M",
-    "id": "PrimalItemConsumable_MantaM_C"
   },
   {
     "name": "Manticore Boots Skin",
@@ -4072,28 +3192,12 @@ const CraftingItems = [
     "id": "PrimalItemTrophy_Manticore_C"
   },
   {
-    "name": "Manticoreunlock",
-    "id": "PrimalItemConsumable_Manticoreunlock_C"
-  },
-  {
     "name": "Mantis Egg",
     "id": "PrimalItemConsumable_Egg_Mantis_C"
   },
   {
-    "name": "Mantis F",
-    "id": "PrimalItemConsumable_MantisF_C"
-  },
-  {
-    "name": "Mantis M",
-    "id": "PrimalItemConsumable_MantisM_C"
-  },
-  {
     "name": "Massive Animal Feces",
     "id": "PrimalItemConsumable_DinoPoopMassive_C"
-  },
-  {
-    "name": "Medbrewbox",
-    "id": "PrimalItemConsumable_medbrewbox_C"
   },
   {
     "name": "Medium Animal Feces",
@@ -4110,10 +3214,6 @@ const CraftingItems = [
   {
     "name": "Medium Base Fragment",
     "id": "PrimalItemArmor_CharmFragment_0_Base_Medium_C"
-  },
-  {
-    "name": "Medium Base Kit",
-    "id": "PrimalItemConsumable_MediumBaseKit_C"
   },
   {
     "name": "Medium Journeyman Fragment",
@@ -4136,14 +3236,6 @@ const CraftingItems = [
     "id": "PrimalItem_SaddleBags_Medium_BH_C"
   },
   {
-    "name": "Megalaniaab F",
-    "id": "PrimalItemConsumable_MegalaniaabF_C"
-  },
-  {
-    "name": "Megalaniaab M",
-    "id": "PrimalItemConsumable_MegalaniaabM_C"
-  },
-  {
     "name": "Megalania 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Megalania_SkinPack_C"
   },
@@ -4154,14 +3246,6 @@ const CraftingItems = [
   {
     "name": "Megalania Egg",
     "id": "PrimalItemConsumable_Egg_Megalania_C"
-  },
-  {
-    "name": "Megalania F",
-    "id": "PrimalItemConsumable_MegalaniaF_C"
-  },
-  {
-    "name": "Megalania M",
-    "id": "PrimalItemConsumable_MegalaniaM_C"
   },
   {
     "name": "Megalania Toxin",
@@ -4176,24 +3260,8 @@ const CraftingItems = [
     "id": "PrimalItemCostume_AAA_Megalodon_C"
   },
   {
-    "name": "Megalodon F",
-    "id": "PrimalItemConsumable_MegalodonF_C"
-  },
-  {
-    "name": "Megalodon M",
-    "id": "PrimalItemConsumable_MegalodonM_C"
-  },
-  {
     "name": "Megalodon Tooth",
     "id": "PrimalItemResource_ApexDrop_Megalodon_C"
-  },
-  {
-    "name": "Megalo F",
-    "id": "PrimalItemConsumable_MegaloF_C"
-  },
-  {
-    "name": "Megalo M",
-    "id": "PrimalItemConsumable_MegaloM_C"
   },
   {
     "name": "Megalosaurus 'ARK: The Animated Series' Costume",
@@ -4210,22 +3278,6 @@ const CraftingItems = [
   {
     "name": "Megatherium 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Megatherium_C"
-  },
-  {
-    "name": "Megatherium F",
-    "id": "PrimalItemConsumable_MegatheriumF_C"
-  },
-  {
-    "name": "Megatherium M",
-    "id": "PrimalItemConsumable_MegatheriumM_C"
-  },
-  {
-    "name": "Meglaceros F",
-    "id": "PrimalItemConsumable_MeglacerosF_C"
-  },
-  {
-    "name": "Meglaceros M",
-    "id": "PrimalItemConsumable_MeglacerosM_C"
   },
   {
     "name": "Meiyin Li 'ARK: The Animated Series' Costume Skin",
@@ -4262,18 +3314,6 @@ const CraftingItems = [
   {
     "name": "Microraptor Egg",
     "id": "PrimalItemConsumable_Egg_MicroRaptor_C"
-  },
-  {
-    "name": "Microraptor F",
-    "id": "PrimalItemConsumable_MicroraptorF_C"
-  },
-  {
-    "name": "Microraptor M",
-    "id": "PrimalItemConsumable_MicroraptorM_C"
-  },
-  {
-    "name": "Mindwipebox",
-    "id": "PrimalItemConsumable_Mindwipebox_C"
   },
   {
     "name": "Mistletoe",
@@ -4364,24 +3404,8 @@ const CraftingItems = [
     "id": "PrimalItemCostume_Canoe_Modern_C"
   },
   {
-    "name": "Monkey F",
-    "id": "PrimalItemConsumable_monkeyF_C"
-  },
-  {
-    "name": "Monkey M",
-    "id": "PrimalItemConsumable_monkeyM_C"
-  },
-  {
     "name": "Morellatops Egg",
     "id": "PrimalItemConsumable_Egg_Camelsaurus_C"
-  },
-  {
-    "name": "Mosa F",
-    "id": "PrimalItemConsumable_MosaF_C"
-  },
-  {
-    "name": "Mosa M",
-    "id": "PrimalItemConsumable_MosaM_C"
   },
   {
     "name": "Mosasaurus 'ARK: The Animated Series' Costume",
@@ -4394,14 +3418,6 @@ const CraftingItems = [
   {
     "name": "Moschops Egg",
     "id": "PrimalItemConsumable_Egg_Moschops_C"
-  },
-  {
-    "name": "Moschops F",
-    "id": "PrimalItemConsumable_MoschopsF_C"
-  },
-  {
-    "name": "Moschops M",
-    "id": "PrimalItemConsumable_MoschopsM_C"
   },
   {
     "name": "Mutation Potion",
@@ -4453,10 +3469,6 @@ const CraftingItems = [
   },
   {
     "name": "Oil",
-    "id": "PrimalItemConsumable_Oil_C"
-  },
-  {
-    "name": "Oil",
     "id": "PrimalItemResource_Oil_C"
   },
   {
@@ -4476,14 +3488,6 @@ const CraftingItems = [
     "id": "PrimalItemCostume_AAA_Otter_C"
   },
   {
-    "name": "Otter F",
-    "id": "PrimalItemConsumable_OtterF_C"
-  },
-  {
-    "name": "Otter M",
-    "id": "PrimalItemConsumable_OtterM_C"
-  },
-  {
     "name": "Otter Mask",
     "id": "PrimalItemSkin_OtterMask_C"
   },
@@ -4496,32 +3500,8 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Egg_Oviraptor_C"
   },
   {
-    "name": "Oviraptor F",
-    "id": "PrimalItemConsumable_OviraptorF_C"
-  },
-  {
-    "name": "Oviraptor M",
-    "id": "PrimalItemConsumable_OviraptorM_C"
-  },
-  {
     "name": "Ovis 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Sheep_C"
-  },
-  {
-    "name": "Ovis F",
-    "id": "PrimalItemConsumable_OvisF_C"
-  },
-  {
-    "name": "Ovis M",
-    "id": "PrimalItemConsumable_OvisM_C"
-  },
-  {
-    "name": "Owl F",
-    "id": "PrimalItemConsumable_OwlF_C"
-  },
-  {
-    "name": "Owl M",
-    "id": "PrimalItemConsumable_OwlM_C"
   },
   {
     "name": "Pachy 'ARK: The Animated Series' Costume",
@@ -4532,14 +3512,6 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Egg_Pachy_C"
   },
   {
-    "name": "Pachy F",
-    "id": "PrimalItemConsumable_PachyF_C"
-  },
-  {
-    "name": "Pachy M",
-    "id": "PrimalItemConsumable_PachyM_C"
-  },
-  {
     "name": "Pachyrhinosaurus 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Pachyrhino_C"
   },
@@ -4548,28 +3520,12 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Egg_Pachyrhino_C"
   },
   {
-    "name": "Pachyrhinosaurus F",
-    "id": "PrimalItemConsumable_PachyrhinosaurusF_C"
-  },
-  {
-    "name": "Pachyrhinosaurus M",
-    "id": "PrimalItemConsumable_PachyrhinosaurusM_C"
-  },
-  {
     "name": "Pair-o-Saurs Chibi",
     "id": "PrimalItemSkin_ChibiDino_Pairosaurs_VDay_C"
   },
   {
     "name": "Paraceratherium 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Paraceratherium_C"
-  },
-  {
-    "name": "Paracer F",
-    "id": "PrimalItemConsumable_ParacerF_C"
-  },
-  {
-    "name": "Paracer M",
-    "id": "PrimalItemConsumable_ParacerM_C"
   },
   {
     "name": "Parasaur 'ARK: The Animated Series' Costume",
@@ -4582,14 +3538,6 @@ const CraftingItems = [
   {
     "name": "Parasaur Egg",
     "id": "PrimalItemConsumable_Egg_Para_C"
-  },
-  {
-    "name": "Parasaur F",
-    "id": "PrimalItemConsumable_ParasaurF_C"
-  },
-  {
-    "name": "Parasaur M",
-    "id": "PrimalItemConsumable_ParasaurM_C"
   },
   {
     "name": "Pegomastax 'ARK: The Animated Series' Costume",
@@ -4608,14 +3556,6 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Egg_Pela_C"
   },
   {
-    "name": "Pelagornis F",
-    "id": "PrimalItemConsumable_PelagornisF_C"
-  },
-  {
-    "name": "Pelagornis M",
-    "id": "PrimalItemConsumable_PelagornisM_C"
-  },
-  {
     "name": "Pelt",
     "id": "PrimalItemResource_Pelt_C"
   },
@@ -4626,18 +3566,6 @@ const CraftingItems = [
   {
     "name": "Phiomia 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Phiomia_C"
-  },
-  {
-    "name": "Phiomia F",
-    "id": "PrimalItemConsumable_PhiomiaF_C"
-  },
-  {
-    "name": "Phiomia M",
-    "id": "PrimalItemConsumable_PhiomiaM_C"
-  },
-  {
-    "name": "Phoenix",
-    "id": "PrimalItemConsumable_Phoenix_C"
   },
   {
     "name": "Piranha 'ARK: The Animated Series' Costume",
@@ -4672,14 +3600,6 @@ const CraftingItems = [
     "id": "PrimalItemCostume_AAA_Plesiosaur_C"
   },
   {
-    "name": "Plesiosaurf",
-    "id": "PrimalItemConsumable_Plesiosaurf_C"
-  },
-  {
-    "name": "Plesiosaurm",
-    "id": "PrimalItemConsumable_Plesiosaurm_C"
-  },
-  {
     "name": "Poison Talon",
     "id": "PrimalItemResource_ApexDrop_PoisonWyvern_C"
   },
@@ -4688,20 +3608,8 @@ const CraftingItems = [
     "id": "PrimalItemResource_ApexDrop_PoisonWyvern_Child_C"
   },
   {
-    "name": "Poisonwyv F",
-    "id": "PrimalItemConsumable_poisonwyvF_C"
-  },
-  {
-    "name": "Poisonwyv M",
-    "id": "PrimalItemConsumable_poisonwyvM_C"
-  },
-  {
     "name": "Polar Dragon Milk",
     "id": "PrimalItemConsumable_PolarDragonMilk_C"
-  },
-  {
-    "name": "Polymer",
-    "id": "PrimalItemConsumable_Polymer_C"
   },
   {
     "name": "Primal Crystal",
@@ -4740,14 +3648,6 @@ const CraftingItems = [
     "id": "PrimalItemCostume_AAA_Procoptodon_C"
   },
   {
-    "name": "Procoptodon F",
-    "id": "PrimalItemConsumable_ProcoptodonF_C"
-  },
-  {
-    "name": "Procoptodon M",
-    "id": "PrimalItemConsumable_ProcoptodonM_C"
-  },
-  {
     "name": "Protoceratops Egg",
     "id": "PrimalItemConsumable_Egg_Proto_C"
   },
@@ -4764,14 +3664,6 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Egg_Ptero_C"
   },
   {
-    "name": "Pteranodon F",
-    "id": "PrimalItemConsumable_PteranodonF_C"
-  },
-  {
-    "name": "Pteranodon M",
-    "id": "PrimalItemConsumable_PteranodonM_C"
-  },
-  {
     "name": "Pulmonoscorpius 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Scorpion_C"
   },
@@ -4782,26 +3674,6 @@ const CraftingItems = [
   {
     "name": "Purlovia 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Purlovia_C"
-  },
-  {
-    "name": "Purlovia F",
-    "id": "PrimalItemConsumable_PurloviaF_C"
-  },
-  {
-    "name": "Purlovia M",
-    "id": "PrimalItemConsumable_PurloviaM_C"
-  },
-  {
-    "name": "Purple Dye Soup",
-    "id": "PrimalItemConsumable_PurpleDyeSoup_C"
-  },
-  {
-    "name": "Pyro F",
-    "id": "PrimalItemConsumable_PyroF_C"
-  },
-  {
-    "name": "Pyro M",
-    "id": "PrimalItemConsumable_PyroM_C"
   },
   {
     "name": "Pyroman Charm",
@@ -4824,14 +3696,6 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Egg_Quetz_C"
   },
   {
-    "name": "Quetz F",
-    "id": "PrimalItemConsumable_QuetzF_C"
-  },
-  {
-    "name": "Quetz M",
-    "id": "PrimalItemConsumable_QuetzM_C"
-  },
-  {
     "name": "Raptor 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Raptor_SkinPack_C"
   },
@@ -4844,28 +3708,12 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Egg_Raptor_C"
   },
   {
-    "name": "Raptor F",
-    "id": "PrimalItemConsumable_RaptorF_C"
-  },
-  {
-    "name": "Raptor M",
-    "id": "PrimalItemConsumable_RaptorM_C"
-  },
-  {
     "name": "Rare Flower",
     "id": "PrimalItemResource_RareFlower_C"
   },
   {
     "name": "Rare Mushroom",
     "id": "PrimalItemResource_RareMushroom_C"
-  },
-  {
-    "name": "Ravager F",
-    "id": "PrimalItemConsumable_RavagerF_C"
-  },
-  {
-    "name": "Ravager M",
-    "id": "PrimalItemConsumable_RavagerM_C"
   },
   {
     "name": "Raw Fish Meat",
@@ -4892,10 +3740,6 @@ const CraftingItems = [
     "id": "PrimalItemResource_RawSalt_C"
   },
   {
-    "name": "Reaper",
-    "id": "PrimalItemConsumable_Reaper_C"
-  },
-  {
     "name": "Reaper Helmet",
     "id": "PrimalItemSkin_ReaperHelmet_C"
   },
@@ -4916,16 +3760,8 @@ const CraftingItems = [
     "id": "PrimalItemResource_RedSap_C"
   },
   {
-    "name": "Red Dye Soup",
-    "id": "PrimalItemConsumable_RedDyeSoup_C"
-  },
-  {
     "name": "Red Gem",
     "id": "PrimalItemResource_Gem_Element_C"
-  },
-  {
-    "name": "Redgems",
-    "id": "PrimalItemConsumable_Redgems_C"
   },
   {
     "name": "Regular Fertilized Maeguana Egg",
@@ -4966,14 +3802,6 @@ const CraftingItems = [
   {
     "name": "Rex Egg",
     "id": "PrimalItemConsumable_Egg_Rex_C"
-  },
-  {
-    "name": "Rex F",
-    "id": "PrimalItemConsumable_RexF_C"
-  },
-  {
-    "name": "Rex M",
-    "id": "PrimalItemConsumable_RexM_C"
   },
   {
     "name": "RG: Absorbent Substrate",
@@ -5220,18 +4048,6 @@ const CraftingItems = [
     "id": "PrimalItemResource_Resource_Wool_C"
   },
   {
-    "name": "Rhino F",
-    "id": "PrimalItemConsumable_RhinoF_C"
-  },
-  {
-    "name": "Rhino M",
-    "id": "PrimalItemConsumable_RhinoM_C"
-  },
-  {
-    "name": "Rhynio",
-    "id": "PrimalItemConsumable_Rhynio_C"
-  },
-  {
     "name": "Rhyniognatha 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Rhyniognatha_C"
   },
@@ -5248,20 +4064,8 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Seed_Rockarrot_C"
   },
   {
-    "name": "Rock Drake F",
-    "id": "PrimalItemConsumable_RockDrakeF_C"
-  },
-  {
     "name": "Rock Drake Feather",
     "id": "PrimalItemResource_ApexDrop_RockDrake_C"
-  },
-  {
-    "name": "Rock Drake M",
-    "id": "PrimalItemConsumable_RockDrakeM_C"
-  },
-  {
-    "name": "Rock Golem",
-    "id": "PrimalItemConsumable_RockGolem_C"
   },
   {
     "name": "Rockwell Trophy (Alpha)",
@@ -5276,18 +4080,6 @@ const CraftingItems = [
     "id": "PrimalItemTrophy_Rockwell_C"
   },
   {
-    "name": "Rockwellunlock",
-    "id": "PrimalItemConsumable_Rockwellunlock_C"
-  },
-  {
-    "name": "Roll Rat F",
-    "id": "PrimalItemConsumable_RollRatF_C"
-  },
-  {
-    "name": "Roll Rat M",
-    "id": "PrimalItemConsumable_RollRatM_C"
-  },
-  {
     "name": "Rotten Fruit",
     "id": "PrimalItemConsumable_RottenFruit_C"
   },
@@ -5298,14 +4090,6 @@ const CraftingItems = [
   {
     "name": "Sabertooth 'ARK: The Animated Series' Costume (Dear Jane)",
     "id": "PrimalItemCostume_AAA_Saber_C"
-  },
-  {
-    "name": "Sabertooth F",
-    "id": "PrimalItemConsumable_SabertoothF_C"
-  },
-  {
-    "name": "Sabertoothr M",
-    "id": "PrimalItemConsumable_SabertoothrM_C"
   },
   {
     "name": "Sabertooth Salmon 'ARK: The Animated Series' Costume",
@@ -5332,24 +4116,12 @@ const CraftingItems = [
     "id": "PrimalItemResource_Sap_C"
   },
   {
-    "name": "Sap",
-    "id": "PrimalItemConsumable_Sap_C"
-  },
-  {
     "name": "Sarco 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Sarco_C"
   },
   {
     "name": "Sarco Egg",
     "id": "PrimalItemConsumable_Egg_Sarco_C"
-  },
-  {
-    "name": "Sarco F",
-    "id": "PrimalItemConsumable_SarcoF_C"
-  },
-  {
-    "name": "Sarco M",
-    "id": "PrimalItemConsumable_SarcoM_C"
   },
   {
     "name": "Sarcosuchus Skin",
@@ -5432,32 +4204,8 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Seed_Silk_SpeedHack_C"
   },
   {
-    "name": "Shadowbox",
-    "id": "PrimalItemConsumable_Shadowbox_C"
-  },
-  {
-    "name": "Shastasaurus F",
-    "id": "PrimalItemConsumable_ShastasaurusF_C"
-  },
-  {
-    "name": "Shastasaurus M",
-    "id": "PrimalItemConsumable_ShastasaurusM_C"
-  },
-  {
-    "name": "Shinehorn F",
-    "id": "PrimalItemConsumable_ShinehornF_C"
-  },
-  {
-    "name": "Shinehorn M",
-    "id": "PrimalItemConsumable_ShinehornM_C"
-  },
-  {
     "name": "Silica Pearls",
     "id": "PrimalItemResource_Silicon_C"
-  },
-  {
-    "name": "Silica Pearls",
-    "id": "PrimalItemConsumable_SilicaPearls_C"
   },
   {
     "name": "Silicate",
@@ -5470,10 +4218,6 @@ const CraftingItems = [
   {
     "name": "Silk",
     "id": "PrimalItemResource_Silk_C"
-  },
-  {
-    "name": "Silk",
-    "id": "PrimalItemConsumable_Silk_C"
   },
   {
     "name": "Simple Fertilized Maeguana Egg",
@@ -5500,10 +4244,6 @@ const CraftingItems = [
     "id": "PrimalItemArmor_CharmFragment_0_Base_Small_C"
   },
   {
-    "name": "Small Base Kit",
-    "id": "PrimalItemConsumable_SmallBaseKit_C"
-  },
-  {
     "name": "Small Journeyman Fragment",
     "id": "PrimalItemArmor_CharmFragment_4_Journeyman_Small_C"
   },
@@ -5524,10 +4264,6 @@ const CraftingItems = [
     "id": "PrimalItem_SaddleBags_Small_BH_C"
   },
   {
-    "name": "Snowglobes",
-    "id": "PrimalItemConsumable_Snowglobes_C"
-  },
-  {
     "name": "Snow Owl Egg",
     "id": "PrimalItemConsumable_Egg_Owl_C"
   },
@@ -5542,10 +4278,6 @@ const CraftingItems = [
   {
     "name": "Somniweed",
     "id": "PrimalItemConsumable_Berry_Somniweed_C"
-  },
-  {
-    "name": "Spider Unlock",
-    "id": "PrimalItemConsumable_SpiderUnlock_C"
   },
   {
     "name": "Spinefruit",
@@ -5564,14 +4296,6 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Egg_Spino_C"
   },
   {
-    "name": "Spino F",
-    "id": "PrimalItemConsumable_SpinoF_C"
-  },
-  {
-    "name": "Spino M",
-    "id": "PrimalItemConsumable_SpinoM_C"
-  },
-  {
     "name": "Spinosaurus Sail",
     "id": "PrimalItemResource_ApexDrop_Spino_C"
   },
@@ -5580,24 +4304,8 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_SpoiledMeat_C"
   },
   {
-    "name": "Starter Base Kit",
-    "id": "PrimalItemConsumable_StarterBaseKit_C"
-  },
-  {
-    "name": "Starter Kit",
-    "id": "PrimalItemConsumable_StarterKit_C"
-  },
-  {
     "name": "Stego Egg",
     "id": "PrimalItemConsumable_Egg_Stego_C"
-  },
-  {
-    "name": "Stego F",
-    "id": "PrimalItemConsumable_StegoF_C"
-  },
-  {
-    "name": "Stego M",
-    "id": "PrimalItemConsumable_StegoM_C"
   },
   {
     "name": "Stegosaurus 'ARK: The Animated Series' Costume",
@@ -5620,16 +4328,8 @@ const CraftingItems = [
     "id": "PrimalItemResource_Stone_C"
   },
   {
-    "name": "Stone",
-    "id": "PrimalItemConsumable_Stone_C"
-  },
-  {
     "name": "Sulfur",
     "id": "PrimalItemResource_Sulfur_C"
-  },
-  {
-    "name": "Sulphur",
-    "id": "PrimalItemConsumable_sulphur_C"
   },
   {
     "name": "Summon Dino Hats",
@@ -5656,24 +4356,12 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_SuperTestMeat_C"
   },
   {
-    "name": "Sweetbox",
-    "id": "PrimalItemConsumable_Sweetbox_C"
-  },
-  {
     "name": "Tapejara 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Tapejara_C"
   },
   {
     "name": "Tapejara Egg",
     "id": "PrimalItemConsumable_Egg_Tapejara_C"
-  },
-  {
-    "name": "Tapejara F",
-    "id": "PrimalItemConsumable_TapejaraF_C"
-  },
-  {
-    "name": "Tapejara M",
-    "id": "PrimalItemConsumable_TapejaraM_C"
   },
   {
     "name": "Tek Canoe Costume",
@@ -5684,84 +4372,28 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Egg_Gigant_Bionic_C"
   },
   {
-    "name": "Tek Gigar F",
-    "id": "PrimalItemConsumable_tekGigarF_C"
-  },
-  {
-    "name": "Tek Gigar M",
-    "id": "PrimalItemConsumable_tekGigarM_C"
-  },
-  {
     "name": "Tek Parasaur Egg",
     "id": "PrimalItemConsumable_Egg_Para_Bionic_C"
-  },
-  {
-    "name": "Tek Parasaur F",
-    "id": "PrimalItemConsumable_tekParasaurF_C"
-  },
-  {
-    "name": "Tek Parasaur M",
-    "id": "PrimalItemConsumable_tekParasaurM_C"
   },
   {
     "name": "Tek Quetzal Egg",
     "id": "PrimalItemConsumable_Egg_Quetz_Bionic_C"
   },
   {
-    "name": "Tek Quetz F",
-    "id": "PrimalItemConsumable_tekQuetzF_C"
-  },
-  {
-    "name": "Tek Quetz M",
-    "id": "PrimalItemConsumable_tekQuetzM_C"
-  },
-  {
     "name": "Tek Raptor Egg",
     "id": "PrimalItemConsumable_Egg_Raptor_Bionic_C"
-  },
-  {
-    "name": "Tek Raptor F",
-    "id": "PrimalItemConsumable_tekRaptorF_C"
-  },
-  {
-    "name": "Tek Raptor M",
-    "id": "PrimalItemConsumable_tekRaptorM_C"
   },
   {
     "name": "Tek Rex Egg",
     "id": "PrimalItemConsumable_Egg_Rex_Bionic_C"
   },
   {
-    "name": "Tek Rex F",
-    "id": "PrimalItemConsumable_tekRexF_C"
-  },
-  {
-    "name": "Tekrex M",
-    "id": "PrimalItemConsumable_tekrexM_C"
-  },
-  {
     "name": "Tek Stego Egg",
     "id": "PrimalItemConsumable_Egg_Stego_Bionic_C"
   },
   {
-    "name": "Tek Stego F",
-    "id": "PrimalItemConsumable_tekStegoF_C"
-  },
-  {
-    "name": "Tek Stego M",
-    "id": "PrimalItemConsumable_tekStegoM_C"
-  },
-  {
     "name": "Tek Trike Egg",
     "id": "PrimalItemConsumable_Egg_Trike_Bionic_C"
-  },
-  {
-    "name": "Tektrike F",
-    "id": "PrimalItemConsumable_tektrikeF_C"
-  },
-  {
-    "name": "Tektrike M",
-    "id": "PrimalItemConsumable_tektrikeM_C"
   },
   {
     "name": "Terror Bird 'ARK: The Animated Series' Costume",
@@ -5770,26 +4402,6 @@ const CraftingItems = [
   {
     "name": "Terror Bird Egg",
     "id": "PrimalItemConsumable_Egg_TerrorBird_C"
-  },
-  {
-    "name": "Terror F",
-    "id": "PrimalItemConsumable_TerrorF_C"
-  },
-  {
-    "name": "Terror M",
-    "id": "PrimalItemConsumable_TerrorM_C"
-  },
-  {
-    "name": "Thatch",
-    "id": "PrimalItemResource_Thatch_C"
-  },
-  {
-    "name": "Theri F",
-    "id": "PrimalItemConsumable_TheriF_C"
-  },
-  {
-    "name": "Theri M",
-    "id": "PrimalItemConsumable_TheriM_C"
   },
   {
     "name": "Therizino Claws",
@@ -5820,20 +4432,12 @@ const CraftingItems = [
     "id": "PrimalItemResource_ApexDrop_Thylaco_C"
   },
   {
-    "name": "Thyleo M",
-    "id": "PrimalItemConsumable_ThyleoM_C"
-  },
-  {
     "name": "Tintoberry",
     "id": "PrimalItemConsumable_Berry_Tintoberry_C"
   },
   {
     "name": "Tintoberry Seed",
     "id": "PrimalItemConsumable_Seed_Tintoberry_C"
-  },
-  {
-    "name": "Titanoboa",
-    "id": "PrimalItemConsumable_Titanoboa_C"
   },
   {
     "name": "Titanoboa 'ARK: The Animated Series' Costume",
@@ -5854,10 +4458,6 @@ const CraftingItems = [
   {
     "name": "Titanosaur Platform Saddle",
     "id": "PrimalItemArmor_TitanSaddle_Platform_C"
-  },
-  {
-    "name": "Titanunlock",
-    "id": "PrimalItemConsumable_Titanunlock_C"
   },
   {
     "name": "Top Hat Skin",
@@ -5884,14 +4484,6 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Egg_Trike_C"
   },
   {
-    "name": "Trike M",
-    "id": "PrimalItemConsumable_TrikeM_C"
-  },
-  {
-    "name": "Trikeo F",
-    "id": "PrimalItemConsumable_TrikeoF_C"
-  },
-  {
     "name": "Troodon 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Troodon_C"
   },
@@ -5900,40 +4492,12 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_Egg_Troodon_C"
   },
   {
-    "name": "Troodon F",
-    "id": "PrimalItemConsumable_TroodonF_C"
-  },
-  {
-    "name": "Troodon M",
-    "id": "PrimalItemConsumable_TroodonM_C"
-  },
-  {
-    "name": "Turret Kit1",
-    "id": "PrimalItemConsumable_TurretKit1_C"
-  },
-  {
-    "name": "Turret Kit2",
-    "id": "PrimalItemConsumable_TurretKit2_C"
-  },
-  {
-    "name": "Tuso F",
-    "id": "PrimalItemConsumable_TusoF_C"
-  },
-  {
-    "name": "Tuso M",
-    "id": "PrimalItemConsumable_TusoM_C"
-  },
-  {
     "name": "Tusoteuthis 'ARK: The Animated Series' Costume",
     "id": "PrimalItemCostume_AAA_Tusoteuthis_C"
   },
   {
     "name": "Tusoteuthis Tentacle",
     "id": "PrimalItemResource_ApexDrop_Tuso_C"
-  },
-  {
-    "name": "Tyleo F",
-    "id": "PrimalItemConsumable_TyleoF_C"
   },
   {
     "name": "Tyrannosaurus Arm",
@@ -5958,14 +4522,6 @@ const CraftingItems = [
   {
     "name": "Velonasaur Egg",
     "id": "PrimalItemConsumable_Egg_Spindles_C"
-  },
-  {
-    "name": "Velonasaurl F",
-    "id": "PrimalItemConsumable_VelonasaurlF_C"
-  },
-  {
-    "name": "Velonasaur M",
-    "id": "PrimalItemConsumable_VelonasaurM_C"
   },
   {
     "name": "Verdberry",
@@ -6032,10 +4588,6 @@ const CraftingItems = [
     "id": "PrimalItemSkin_WerewolfHat_C"
   },
   {
-    "name": "White Dye Soup",
-    "id": "PrimalItemConsumable_WhiteDyeSoup_C"
-  },
-  {
     "name": "WhiteFlag",
     "id": "PrimalItemStructure_WhiteFlag_C"
   },
@@ -6050,10 +4602,6 @@ const CraftingItems = [
   {
     "name": "Wood",
     "id": "PrimalItemResource_Wood_C"
-  },
-  {
-    "name": "Wood",
-    "id": "PrimalItemConsumable_Wood_C"
   },
   {
     "name": "Wool",
@@ -6084,36 +4632,8 @@ const CraftingItems = [
     "id": "PrimalItemConsumable_WyvernMilk_Child_C"
   },
   {
-    "name": "Xiph F",
-    "id": "PrimalItemConsumable_XiphF_C"
-  },
-  {
-    "name": "Xiph M",
-    "id": "PrimalItemConsumable_XiphM_C"
-  },
-  {
-    "name": "Yellow Dye Soup",
-    "id": "PrimalItemConsumable_YellowDyeSoup_C"
-  },
-  {
     "name": "Yi Ling Egg",
     "id": "PrimalItemConsumable_Egg_YiLing_C"
-  },
-  {
-    "name": "Yiling F",
-    "id": "PrimalItemConsumable_YilingF_C"
-  },
-  {
-    "name": "Yiling M",
-    "id": "PrimalItemConsumable_YilingM_C"
-  },
-  {
-    "name": "Yuty F",
-    "id": "PrimalItemConsumable_YutyF_C"
-  },
-  {
-    "name": "Yuty M",
-    "id": "PrimalItemConsumable_YutyM_C"
   },
   {
     "name": "Yutyrannus 'ARK: The Animated Series' Costume",
