@@ -263,16 +263,18 @@
 
     function populateDropdown(filter = '') {
       dropdown.innerHTML = '';
-      CraftingItems.filter(r => r.name.toLowerCase().includes(filter.toLowerCase())).forEach(r => {
-        const item = document.createElement('div');
-        item.textContent = r.name;
-        item.onclick = () => {
-          input.value = r.name;
-          input.dataset.id = r.id;
-          dropdown.style.display = 'none';
-        };
-        dropdown.appendChild(item);
-      });
+      if (typeof CraftingItems !== 'undefined') {
+        CraftingItems.filter(r => r.name.toLowerCase().includes(filter.toLowerCase())).forEach(r => {
+          const item = document.createElement('div');
+          item.textContent = r.name;
+          item.onclick = () => {
+            input.value = r.name;
+            input.dataset.id = r.id;
+            dropdown.style.display = 'none';
+          };
+          dropdown.appendChild(item);
+        });
+      }
     }
 
     document.addEventListener('click', e => {
@@ -346,12 +348,16 @@
         const defaultRecipe = DefaultCraftingRecipes.find(r => r.name === engram.name);
         if (!recipeData[engram.name]) {
           if (defaultRecipe) {
-            recipeData[engram.name] = defaultRecipe.ingredients.map(i => ({
-              name: i.resourceName || i.resource,
-              id: i.resource,
-              amount: i.amount,
-              _uid: crypto.randomUUID()
-            }));
+            recipeData[engram.name] = defaultRecipe.ingredients.map(i => {
+              const name = i.resourceName || i.resource;
+              const match = typeof CraftingItems !== 'undefined' ? CraftingItems.find(r => r.name.toLowerCase() === name.toLowerCase()) : null;
+              return {
+                name,
+                id: match?.id || i.resource,
+                amount: i.amount,
+                _uid: crypto.randomUUID()
+              };
+            });
           } else {
             continue;
           }
@@ -378,13 +384,14 @@
   function generateRecipeOverride() {
     persistAllInputs();
     const output = [];
+
     document.querySelectorAll('.recipe-checkbox:checked').forEach(cb => {
       const name = cb.dataset.engram;
       const id = DefaultCraftingRecipes.find(r => r.name === name)?.id || name;
       const ingredients = (recipeData[name] || []).map(ing => {
         let type = ing.id;
         if (!type || type === ing.name) {
-          const match = CraftingItems.find(r => r.name.toLowerCase() === (ing.name || '').toLowerCase());
+          const match = typeof CraftingItems !== 'undefined' ? CraftingItems.find(r => r.name.toLowerCase() === (ing.name || '').toLowerCase()) : null;
           if (match) {
             type = match.id;
             ing.id = match.id;
@@ -399,6 +406,7 @@
         output.push(`ConfigOverrideItemCraftingCosts=(ItemClassString="${id}",BaseCraftingResourceRequirements=(${ingredients.join(',')}))`);
       }
     });
+
     document.getElementById('recipeOutput').value = output.join('\n');
   }
 
