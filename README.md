@@ -1,6 +1,6 @@
 # ARK: Survival Ascended Engram Configuration Tool
 
-A modern, browser-based toolset for customizing `Game.ini` overrides in **ARK: Survival Ascended**. Built for server admins and modders who want full control over how engrams and crafting recipes behave — all without touching `.ini` files manually.
+A browser-based toolset for customizing `Game.ini` overrides in **ARK: Survival Ascended**.
 ---
 
 ##  Features
@@ -8,7 +8,7 @@ A modern, browser-based toolset for customizing `Game.ini` overrides in **ARK: S
 ###  Engram Editor
 - Supports **all official DLC content**
   - Categorized by Base Game, Scorched Earth, Aberration, Extinction, Genesis 1 & 2, and more.
-- **Automatic mod detection**
+- **Mod content**
   - Groups third-party engrams under a collapsible “Third-Party Mod Engrams” section.
 - **Toggleable sections**
   - Easily hide/show cosmetics like skins.
@@ -31,19 +31,19 @@ A modern, browser-based toolset for customizing `Game.ini` overrides in **ARK: S
 
 ##  File List
 
-- `EngramsEditor.html` — Engram Editor
+- `EngramsEditor.html`  — Engram Editor
 - `CraftingEditor.html` — Crafting Override Editor
 - `EngramsList.js` — Full engram data list
 - `DefaultCraftingRecipes.js` — Default recipe definitions
-- `CraftingItems.js` — Ingredient lookup for recipe editor
+- `CraftingItems.js`  — Ingredient lookup for recipe editor
 - `Background.jpg` — ASA-themed background
 
 ---
 
 ##  Use Cases
 
-- Server admins fine-tuning progression
-- Modders balancing engram availability and recipes
+- Fine-tuning progression
+- Balancing engram availability and recipes
 - Visual editing of `.ini` override entries
 
 ---
