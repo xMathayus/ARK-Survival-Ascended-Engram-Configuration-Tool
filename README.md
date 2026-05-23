@@ -1,55 +1,33 @@
-# ARK: Survival Ascended Engram Configuration Tool
+# ⚠️ THIS PROJECT IS NO LONGER MAINTAINED ⚠️
 
-A browser-based toolset for customizing `Game.ini` overrides in **ARK: Survival Ascended**.
----
+# ARK: Survival Ascended Engram Config Tool
 
-##  Features
+A simple browser-based tool for editing and generating Game.ini overrides for ARK: Survival Ascended.
 
-###  Engram Editor
-- Supports **all official DLC content**
-  - Categorized by Base Game, Scorched Earth, Aberration, Extinction, Genesis 1 & 2, and more.
-- **Mod content**
-  - Groups third-party engrams under a collapsible “Third-Party Mod Engrams” section.
-- **Toggleable sections**
-  - Easily hide/show cosmetics like skins.
-- **Live table editing**
-  - Change level requirements, engram costs, visibility, and prerequisites directly.
-- **Import existing config lines**
-  - Paste `OverrideNamedEngramEntries` or raw `EngramEntry_Example_C` lines.
-- **One-click Game.ini output**
-  - Generates fully formatted `OverrideNamedEngramEntries` ready to paste into your config.
+Built to make engram and crafting config editing easier and less painful.
 
----
+# Features
 
-###  Crafting Recipe Editor
-- **Crafting override support** via `ConfigOverrideItemCraftingCosts`
-- Edit ingredients for individual engrams
-- Add/remove items with dropdown search
-- Generate ready-to-use `Game.ini` override lines
+## Engram Editor
+- Supports all official DLC and expansion content
+- Mod support for third-party engrams in a separate collapsible section
+- Toggle categories on and off, including cosmetics like skins
+- Live editing of core values:
+  - Unlock level
+  - Engram point cost
+  - Visibility
+  - Prerequisites
+- Import existing config entries:
+  - OverrideNamedEngramEntries
+  - Raw EngramEntry_* lines
+- One-click Game.ini output generation
 
----
+## Crafting Recipe Editor
+- Supports ConfigOverrideItemCraftingCosts
+- Edit crafting recipes per engram
+- Add or remove ingredients using searchable dropdowns
+- Generates ready to use Game.ini crafting override entries
 
-##  File List
-
-- `EngramsEditor.html`  — Engram Editor
-- `CraftingEditor.html` — Crafting Override Editor
-- `EngramsList.js` — Full engram data list
-- `DefaultCraftingRecipes.js` — Default recipe definitions
-- `CraftingItems.js`  — Ingredient lookup for recipe editor
-- `Background.jpg` — ASA-themed background
-
----
-
-##  Use Cases
-
-- Fine-tuning progression
-- Balancing engram availability and recipes
-- Visual editing of `.ini` override entries
-
----
-
-## ☕ Support
-
-If you find the tool helpful, consider supporting the developer:  
-[Buy me a coffee](https://ko-fi.com/mathayus)
-
+# Support
+If you want to support the project:
+https://ko-fi.com/mathayus
